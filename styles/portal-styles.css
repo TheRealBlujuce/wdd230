@@ -1,0 +1,36 @@
+
+
+.portal-header{
+    position: relative;
+    left: 45px;
+    background-color: bisque;
+    width: 448px;
+    height: 116px;
+    border-radius: 16px;
+}
+
+.list{
+    position: relative;
+    left: 45px;
+}
+
+.name, .portal-title{
+    position: inherit;
+    top: 12px;
+    left: 125px;
+}
+
+.last-updated, .copyright{
+    position: inherit;
+    top: 24px;
+    left: 100px;
+}
+
+.portal-footer{
+    position: relative;
+    left: 45px;
+    background-color: bisque;
+    width: 448px;
+    height: 116px;
+    border-radius: 16px;
+}
