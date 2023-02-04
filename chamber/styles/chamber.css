@@ -29,7 +29,10 @@
     padding-right: 12px;
 }
 
-nav {
+
+ /* Style the navigation menu */
+ .topnav {
+    overflow: hidden;
     display: flex;
 	flex-direction: column;
     
@@ -37,42 +40,126 @@ nav {
 	text-align: justify;
     align-content: center;
 	box-shadow: 0 0 64px #333;
-	margin: 24px auto;
-    padding: 25px;
+	margin: 12px auto;
+    padding: 12px;
+    padding-top: 16px;
     border-radius: 48px;
     max-width: auto;
-}
-
-nav div {
-	flex: 1 1 auto;
-}
-
-nav a {
     transition-duration: 0.75s;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    transition-duration: 0.75s;
+    border-radius: 12px;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    transition-duration: 0.5s;
 	display: block;
 	color: #fff;
-	text-align: center;
-	padding: 24px;
-    max-width: 264px;
-    max-height: auto;
+	text-align: justify;
+	padding: 20px;
+    margin-top: 8px;
+    margin-left: 64px;
+    margin-right: 64px;
+    width: auto;
 	text-decoration: none;
 	font-size: 0.9rem;
     font-family: var(--font);
-    border-radius: 28px;
+    border-radius: 24px;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    transition-duration: 0.75s;
+    background: var(--paragraph-background-color);
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 3%;
+    width: 296px;
+    height: 32px;
+    border-radius: 32px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    transition-duration: 0.25s;
+    background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    transition-duration: 0.75s;
+    background-color: #04AA6D;
+    color: white;
+  } 
+
+.explore-btn{
+    text-align: center;
+    margin-top: 3px;
 }
 
-nav a:hover {
+
+
+.banner{
+    display: flex;
+	flex-direction: column;
+    
+	background-color: var(--nav-background-color);
+	text-align: justify;
+    align-content: center;
+	box-shadow: 0 0 64px #333;
+	margin: 28px auto;
+    padding: 25px;
+    padding-left: 80px;
+    border-radius: 48px;
+    max-width: 1632px;
+    height: auto;
+    flex: 1 1 auto;
+    text-align: justify;
+    color: white;
+    font-family: var(--font);
+}
+
+
+.banner-button{
+    transition-duration: 0.75s;
+    display: block;
+    background-color: var(--paragraph-background-color);
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 216px;
+    max-height: auto;
+    margin-left: 1280px;
+    margin-right: 32px;
+    margin-top: -80px;
+	text-decoration: none;
+	font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 32px;
+}
+
+.banner-button:hover {
     transition-duration: 0.75s;
     background-color: var(--nav-hover-background-color);
 	color: var(--nav-hover-link-color);
 }
 
+
 .title{
     display: block;
     text-align: justify;
     font-size: 1.1rem;
-    margin-top: -12px;
-    margin-left: -8px;
+    margin-top: -86px;
+    margin-left: 96px;
     font-family: var(--font);
     color: white;
     max-width: 264px;
@@ -86,41 +173,85 @@ body{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 3fr 3fr;
-    margin-left: 100px;
-    margin-right: 100px;
-    grid-gap:24px;
+    margin-left: 76px;
+    grid-gap: 24px;
+    column-gap: 32px;
     height: calc(75vh - 10px);
 }
 .news, .events, .comp1, .comp2{
     font-family: var(--font);
-    padding: 64px;
+    padding: 12px -12px;
     color: white;
     font-size: 1.1rem;
     background-color: var(--primary-color);
-    align-content: center;
+    align-content: justify;
 	box-shadow: 0 0 64px #333;
     border-radius: 48px;
 }
 
-.news{ grid-column: 1/2; grid-row: 0/2;}
-.events{ grid-column: 1/2; grid-row: 2/3;}
-.comp1{ grid-column:  2/3; grid-row: 0/2;}
-.comp2{ grid-column: 2/3; grid-row: 2/3;}
+.comp1, .comp2{
+    max-width: 880px;
+}
+
+.news, .events{
+    max-width: 2480px;
+}
+
+.news{ grid-column: 1/8; grid-row: 1/3;}
+.events{ grid-column: 1/8; grid-row: 0/3;}
+.comp1{ grid-column:  8/9; grid-row: 1/3;}
+.comp2{ grid-column: 8/9; grid-row: 0/3;}
 
 footer{
     display: flex;
     flex-direction: row;
-    padding: 12px;
+    padding: 32px;
     margin-left: 20%;
 }
 
 footer div{
-    display: block;
+    display: relative;
     color: #fff;
     font-family: var(--font);
 	text-align: center;
-    margin: 12px 32px;
+    margin: 20px 32px;
 }
+
+.gDev, .gMing{
+    width: 61%;
+    height: 100%;
+    border-radius: 32px;
+    display: block;
+
+}
+
+
+.news-inner, .events-inner{
+    position: absolute;
+    padding: 48px;
+    width: 700px;
+    text-align: justify;
+}
+
+.events-inner{margin-top: -12px;}
+
+.comp1-inner, .comp2-inner{
+    text-align: center;
+    margin-left: 480px;
+}
+
+.comp1-inner{
+    margin-top: -396px;
+}
+
+.comp2-inner{
+    margin-top: -196px;
+}
+
+.comp1-inner-desc, .comp2-inner-desc{
+    margin-left: 560px;
+}
+
 
 /***********************************************/
 /** Media Queries for views *************/
@@ -154,41 +285,197 @@ footer div{
 /* Tablet styles */
 @media only screen and (min-device-width: 600px) and (max-device-width: 960px), screen and (min-width: 600px) and (max-width: 960px){
   .content {max-width:600px;}
+
+
+  .topnav{padding: 48px; border-radius: 42px;}
+  .topnav a.icon{ right: 8%; top: 1.5%; border-radius: 28px; width: 100px;}
+
+  .topnav #myLinks { height: 348px;}
+
+  .topnav a{
+      position:relative;
+      text-align: center;
+      width: 100px;
+      padding: 16px;
+      margin-top: 16px;
+      margin-left: 0px;
+      margin-right: 0px;
+      right: -65%; top: 28%;
+  }
+
+  .banner{ padding: 48px;}
+
+  .banner-button {margin-left: 0%; margin-top: 0%;}
+
+  .title {
+      font-size: 0rem;
+      text-align: justify;
+      opacity: 0;
+  }
+  .logo{
+      width: 80px;
+      height: auto;
+      margin-top: -36px;
+      margin-left: -24px;
+  }
+
+  .grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 3fr 3fr;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 75px;
+      row-gap: 248px;
+      column-gap: 12px;
+      height: calc(75vh - 10px);
+      width: calc(75vh - 138px);
+  }
+
+  .news{ grid-column: 1/3; grid-row: 1/3;}
+  .events{ grid-column: 3/6; grid-row: 1/3;}
+  .comp1{ grid-column:  1/3; grid-row: 3/6;}
+  .comp2{ grid-column: 3/6; grid-row: 3/6;}
+
+
+  .news, .events, .comp1, .comp2{
+
+      padding: 32px;
+      border-radius: 36px;
+      width: 382px;
+      max-width: 548px;
+      height: 400px;
+  }
+
+
+  .news-inner, .events-inner{padding: 8px; width: 364px;}
+
+  .gDev, .gMing{
+      width: 110%;
+      height: 95%;
+      border-radius: 32px;
+      display: block;
+      margin-left: -18px;
+      margin-top: -16px;
+  }
+
+  .comp1-inner-desc, .comp2-inner-desc {
+      display: none;
+  }
+
+
+  .comp1-inner, .comp2-inner{
+      text-align: justify;
+      margin-top: 0%;
+      margin-left: 0%;
+  }
+
+  footer{
+      display: flex;
+      flex-direction: row;
+      padding: 12px;
+      margin-left: 10%;
+      margin-top: 276px;
+  }
+  footer div{
+      display: block;
+      color: #fff;
+      font-family: var(--font);
+      text-align: center;
+      margin: 6px ;
+      font-size: 0.75rem;
+  }
+
+
+
 }
 
 /* Phone styles */
-@media only screen and (max-device-width: 600px), screen and (max-width: 600px) {
-  .content {max-width:100%;}
-  nav {height: 64px; margin:-24px; max-width: 800px; flex-direction: row;}
-  nav a {max-width: 200px; padding: 12px; margin-right: 32px;}
-  nav div {padding-top: 16px;}
-  .title {
-    font-size: 0rem;
-    text-align: justify;
-    opacity: 0;
-  }
-  .logo{
-    width: 36px;
-    height: 32px;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 3fr 3fr;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 75px;
-    grid-gap:24px;
-    height: calc(75vh - 10px);
-    width: calc(75vh - 138px);
-}
+@media only screen and (max-device-width: 464px), screen and (max-width: 600px) {
+    .content {max-width:100%;}
+
+    .topnav{padding: 48px; border-radius: 42px;}
+    .topnav a.icon{ right: 8%; top: 1.5%; border-radius: 28px; width: 100px;}
+
+    .topnav #myLinks { height: 348px;}
+
+    .topnav a{
+        position:relative;
+        text-align: center;
+        width: 100px;
+        padding: 16px;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        right: -65%; top: 28%;
+    }
+
+    .banner{ padding: 48px;}
+
+    .banner-button {margin-left: 0%; margin-top: 0%;}
+
+    .title {
+        font-size: 0rem;
+        text-align: justify;
+        opacity: 0;
+    }
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: -36px;
+        margin-left: -24px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 3fr 3fr;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 75px;
+        grid-gap:24px;
+        height: calc(75vh - 10px);
+        width: calc(75vh - 138px);
+    }
+
+    .news{ grid-column: 1/2; grid-row: 1/2;}
+    .events{ grid-column: 1/2; grid-row: 2/3;}
+    .comp1{ grid-column:  1/2; grid-row: 3/4;}
+    .comp2{ grid-column: 1/2; grid-row: 4/5;}
+
 
     .news, .events, .comp1, .comp2{
 
         padding: 32px;
         border-radius: 36px;
+        max-width: 348px;
+        
+    }
 
+    .news, .events{
+        height: 400px;
+    }
+
+    .news-inner, .events-inner{padding: 8px; width: 332px;}
+
+    .gDev, .gMing{
+        width: 110%;
+        height: 108%;
+        border-radius: 32px;
+        display: block;
+        margin-left: -18px;
+        margin-top: -16px;
+    }
+
+    .comp1-inner-desc, .comp2-inner-desc {
+        display: none;
+    }
+
+
+    .comp1-inner, .comp2-inner{
+        text-align: center;
+        margin-top: 0%;
+        margin-left: 0%;
     }
 
     footer{
@@ -196,6 +483,7 @@ footer div{
         flex-direction: row;
         padding: 6px;
         margin-left: 2%;
+        margin-top: 1048px;
     }
     footer div{
         display: block;

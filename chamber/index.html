@@ -5,32 +5,64 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/chamber.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <header>
-        <div>
-            <nav>
-                <img class="logo" src="../images/Chamber of Commerce Logo.png">
-                <div class="title">
-                    <p>Citizens Chamber of Commerce</p>
-                    <p class="date">Date is Here</p>
 
-                </div>
-                <div> <a href="#">Page 1</a> </div>
-                <div> <a href="#">Page 2</a> </div>
-                <div> <a href="#">Page 3</a> </div>
-                <div> <a href="#">Page 4</a> </div>
-            </nav>
+        <div class="topnav">
+            <img class="logo" src="../images/Chamber of Commerce Logo.png">
+            <div class="title">
+                <p>Citizens Chamber of Commerce</p>
+                <p class="date">Date is Here</p>
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">Page 1</a>
+              <a href="#contact">Page 2</a>
+              <a href="#about">Page 3</a>
+              <a href="#about">Page 4</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <h3 class="explore-btn">Explore</h3>
+            </a>
+          </div>
+        <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
+            <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
         </div>
     </header>
     
     <body>
         <grid class="grid">
-            <div class="news">news</div>
-            <div class="events">events</div>
-            <div class="comp1">comp1</div>
-            <div class="comp2">comp2</div>
+            <div class="news">
+                <p class="news-inner">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="events">
+                <p class="events-inner">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div class="comp1">
+                <img class="gDev" src="./images/gamedev-img.jpg">
+                <h4 class="comp1-inner">Game Dev Panel: Game Feel</h4>
+                <p class="comp1-inner-desc">Feel like your missing something to make your game feel more juicy? <br> Come learn more about game feel <br>with OldSoft Games. </p>
+            </div>
+
+            <div class="comp2">
+                <img class="gMing" src="./images/gaming-img.jpg">
+                <h4 class="comp2-inner">OldSoft Games Showcase</h4>
+                <p class="comp2-inner-desc">Check out the upcomming games <br>from OldSoft!</p>
+            </div>
         </grid>
     </body>
 
