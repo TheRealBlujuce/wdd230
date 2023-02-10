@@ -10,12 +10,23 @@
 
     <header>
 
+
+        <img class="logo" src="../images/Chamber of Commerce Logo.png">
+        <div class="title">
+            <p>Citizens Chamber of Commerce</p>
+            <p class="date">Date is Here</p>
+        </div>
+
+        <nav>
+            <a href="#news">Page 1</a>
+            <a href="#contact">Page 2</a>
+            <a href="#about">Page 3</a>
+            <a href="#about">Page 4</a>
+        </nav>
+
+
         <div class="topnav">
-            <img class="logo" src="../images/Chamber of Commerce Logo.png">
-            <div class="title">
-                <p>Citizens Chamber of Commerce</p>
-                <p class="date">Date is Here</p>
-            </div>
+
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
               <a href="#news">Page 1</a>
@@ -27,41 +38,42 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <h3 class="explore-btn">Explore</h3>
             </a>
-          </div>
-        <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
-            <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
         </div>
+            <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
+                <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
+            </div>
     </header>
     
     <body>
         <grid class="grid">
             <div class="news">
-                <p class="news-inner">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="text-inner">
+                    News
                 </p>
             </div>
             <div class="events">
-                <p class="events-inner">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="text-inner">
+                    Events
                 </p>
             </div>
 
+            <div class="hero">
+                <p class="text-inner">
+                    hero
+                </p>
+                <a class="hero-button" href="#"><h3>Join!</h3></a>
+            </div>
+            
             <div class="comp1">
-                <img class="gDev" src="./images/gamedev-img.jpg">
-                <h4 class="comp1-inner">Game Dev Panel: Game Feel</h4>
-                <p class="comp1-inner-desc">Feel like your missing something to make your game feel more juicy? <br> Come learn more about game feel <br>with OldSoft Games. </p>
+                <p class="text-inner">
+                    Spotlight 1
+                </p>
             </div>
 
             <div class="comp2">
-                <img class="gMing" src="./images/gaming-img.jpg">
-                <h4 class="comp2-inner">OldSoft Games Showcase</h4>
-                <p class="comp2-inner-desc">Check out the upcomming games <br>from OldSoft!</p>
+                <p class="text-inner">
+                    Spotlight 2
+                </p>
             </div>
         </grid>
     </body>
@@ -71,7 +83,7 @@
         <div>Will Marda</div>
         <div>WDD 230 Project</div>
         <div id="updated"></div>
-        
+        <div> Centerville, Utah</div>
     </footer>
 
     <script src="scripts/chamber.js"></script>
