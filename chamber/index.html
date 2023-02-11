@@ -11,7 +11,7 @@
     <header>
 
 
-        <img class="logo" src="../images/Chamber of Commerce Logo.png">
+        <img class="logo" src="./images/Chamber of Commerce Logo.webp">
         <div class="title">
             <p>Citizens Chamber of Commerce</p>
             <p class="date">Date is Here</p>
@@ -58,8 +58,13 @@
             </div>
 
             <div class="hero">
+                <picture>
+                    <source class="hero-img" media="(min-width: 960px)" srcset="./images/wdd230-org.jpg">
+                    <source class="hero-img" media="(min-width: 600px)" srcset="./images/wdd230-org.jpg">
+                    <img class="hero-img" src="./images/wdd230-org.jpg">
+                </picture> 
                 <p class="text-inner">
-                    Hero
+                    Hero. This is some test text
                 </p>
                 <a class="hero-button" href="#"><h3>Join!</h3></a>
             </div>
@@ -67,6 +72,9 @@
             <div class="weather">
                 <p class="text-inner">
                     Weather
+                    <span id="temp" class="currentTemp"> current temp </span>
+                    <span id="windspeed" class="currentWSpeed"> current windspeed </span>
+                    <span id="windchill" class="windchill"> current windchill </span>
                 </p>
             </div>
             
@@ -93,4 +101,5 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </html>

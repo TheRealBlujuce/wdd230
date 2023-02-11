@@ -34,10 +34,8 @@
 /* #region Nav Bar*/
     nav {
         position: absolute;
-
         right: 64px;
         top: 0px;
-
         display: inline-flex;
         flex-direction: column;
         background-color: var(--nav-background-color);
@@ -154,8 +152,6 @@
     }
 /* #endregion */
 
-
-
 .banner{
     display: flex;
 	flex-direction: column;
@@ -165,6 +161,7 @@
     align-content: center;
 	box-shadow: 0 0 64px #333;
 	margin: 28px auto;
+    margin-top: 48px;
     padding: 25px;
     padding-left: 80px;
     border-radius: 48px;
@@ -251,17 +248,14 @@ body{
     grid-column: 1/2; 
     grid-row: 2/3;
 }
-
 .hero{
     grid-column: 2/3; 
     grid-row: 1/2;
 }
-
 .weather{
     grid-column: 2/3; 
     grid-row: 2/3;
 }
-
 .comp1{ 
     grid-column:  3/4; 
     grid-row: 1/2;
@@ -285,15 +279,6 @@ footer div{
 	text-align: center;
     margin: 20px 32px;
 }
-
-.gDev, .gMing{
-    width: 61%;
-    height: 100%;
-    border-radius: 32px;
-    display: block;
-
-}
-
 
 .text-inner{
     position: absolute;
@@ -326,6 +311,38 @@ footer div{
 	color: var(--nav-hover-link-color);
 }
 
+.hero-img{
+    position: absolute;
+    display: block;
+    left: 33.6%;
+    top: 33.15%;
+    width: 624px;
+    height: 331px;
+    border-radius: 48px;
+    opacity: 75%;
+}
+
+.currentTemp{
+    position: absolute;
+    display: block;
+    top: 96%;
+    left: 32%
+}
+
+.currentWSpeed{
+    position: absolute;
+    display: block;
+    top: 112%;
+    left: 32%
+}
+
+.windchill{
+    position: absolute;
+    display: block;
+    top: 128%;
+    left: 32%
+}
+
 /***********************************************/
 /** Media Queries for views *************/
 /***********************************************/
@@ -335,7 +352,10 @@ footer div{
 /** DESKTOP VIEW DEFAULTS *************/
 /***********************************************/
 
-@media (min-width: 37.5em) {
+@media (min-width: 768px) {
+
+    .content {max-width:960px}
+    
 	nav {
 		flex-direction: row;
 	}
@@ -355,14 +375,7 @@ footer div{
     }
 }
 
-@media (min-width: 48em) {
-	nav a {
-		font-size: 1.3rem;
-	}
-}
 
-/*  Default styles */
-.content {max-width:960px}
 
 /***********************************************/
 /** TABLET VIEW DETAILS *************/
@@ -382,12 +395,15 @@ footer div{
     }
 
 
-  .banner{ padding: 48px;}
+    .banner{ 
+        margin-top: 148px;
+        padding: 48px;
+    }
 
-  .banner-button {
-    margin-left: 0%; 
-    margin-top: 0%;
-}
+    .banner-button {
+        margin-left: 0%; 
+        margin-top: 0%;
+    }
 
   .title {
       font-size: 0rem;
@@ -404,7 +420,7 @@ footer div{
   .grid {
       display: grid;
       grid-template-columns: auto auto;
-      margin-top: 132px;
+      margin-top: 32px;
       margin-left: 5px;
       margin-right: 5px;
       column-gap: 12px;
@@ -428,7 +444,6 @@ footer div{
       height: 248px;
   }
 
-  
 
   .text-inner{padding: 8px; width: 364px;}
 
@@ -459,7 +474,37 @@ footer div{
       font-size: 0.75rem;
   }
 
+    .hero-img{
+        position: absolute;
+        display: block;
+        left: 34.25%;
+        top: 56.15%;
+        width: 280px;
+        height: 316px;
+        border-radius: 40px;
+        opacity: 75%;
+    }
 
+    .currentTemp{
+        position: absolute;
+        display: block;
+        top: 112%;
+        left: 0%
+    }
+
+    .currentWSpeed{
+        position: absolute;
+        display: block;
+        top: 168%;
+        left: 0%
+    }
+
+    .windchill{
+        position: absolute;
+        display: block;
+        top: 224%;
+        left: 0%
+    }
 
 }
 
@@ -522,7 +567,7 @@ footer div{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: 3fr 3fr;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 2px;
         margin-right: 2px;
         grid-gap:16px;
@@ -569,5 +614,38 @@ footer div{
     .hero-button{
         left: 50%;
     }
+
+    .hero-img{
+        position: absolute;
+        display: block;
+        left: 2.25%;
+        top: 64.5%;
+        width: 418px;
+        height: 464.5px;
+        border-radius: 36px;
+        opacity: 75%;
+    }
+
+    .currentTemp{
+        position: absolute;
+        display: block;
+        top: 112%;
+        left: 0%
+    }
+
+    .currentWSpeed{
+        position: absolute;
+        display: block;
+        top: 168%;
+        left: 0%
+    }
+
+    .windchill{
+        position: absolute;
+        display: block;
+        top: 224%;
+        left: 0%
+    }
+
 
 }
