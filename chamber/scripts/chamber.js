@@ -35,6 +35,8 @@ function main()
         document.getElementById("banner").style.display = "none";
     }
 
+    IncrementViewCount()
+
 }
 
 
@@ -61,6 +63,32 @@ function DisplayBanner()
             break;
     }
 }
+
+
+
+// this is for the page views
+const count = document.getElementById('views');
+
+function IncrementViewCount()
+{
+    let views;
+    if (!localStorage.getItem("views"))
+    {
+        localStorage.setItem("views", 1)
+        
+    }
+    else
+    {
+        views = +localStorage.getItem("views");
+        const updatedValue = views + 1;
+        localStorage.setItem("views", updatedValue)
+    }
+
+    
+    count.innerText = "Current Views: " + views;
+}
+
+
 
 
 function myFunction() {

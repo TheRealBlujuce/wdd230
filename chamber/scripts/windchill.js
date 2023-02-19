@@ -17,9 +17,20 @@ function getWindChill(tempF, windSpeed) {
 function main()
 {
 
-    document.getElementById("temp").innerText = "Current Temperature: " + currentTemp.toString() +"°F";
-    document.getElementById("windspeed").innerText = "Current Wind Speed: " + currentWindSpeed.toString() + " mp/h";
-    document.getElementById("windchill").innerText = "Current WindChill: " + getWindChill(currentTemp, currentWindSpeed);
+
+
+    if (document.getElementById('demo-temp') != null )
+    {
+      document.getElementById("demo-temp").innerText = currentTemp.toString() +"°F";
+    }
+    else
+    {
+      document.getElementById("temp").innerText = "Current Temperature: " + currentTemp.toString() +"°F";
+      document.getElementById("windspeed").innerText = "Current Wind Speed: " + currentWindSpeed.toString() + " mp/h";
+      document.getElementById("windchill").innerText = "Current WindChill: " + getWindChill(currentTemp, currentWindSpeed);
+  
+    }
+    
 
 }
 

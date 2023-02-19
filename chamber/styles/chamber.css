@@ -176,7 +176,7 @@
 
 .banner-button{
     transition-duration: 0.75s;
-    display: block;
+    display: inline-block;
     background-color: var(--paragraph-background-color);
 	color: #fff;
 	text-align: center;
@@ -185,9 +185,8 @@
     padding-right: 75px;
     max-width: 216px;
     max-height: auto;
-    margin-left: 1280px;
-    margin-right: 32px;
-    margin-top: -80px;
+
+ 
 	text-decoration: none;
 	font-size: 0.9rem;
     font-family: var(--font);
@@ -219,19 +218,19 @@ body{
 .grid {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 3fr 3fr;
     margin-top: 48px;
-    margin-left: 32px;
-    margin-right: 32px;
-    grid-gap: 24px;
-    column-gap: 32px;
-    height: calc(75vh - 10px);
+    margin-left: 8px;
+    margin-right: 8px;
+    grid-gap: 12px;
+    height: calc(100vh - 10px);
 }
 
-.news, .events, .comp1, .comp2, .hero, .weather{
+.news, .events, .comp1, .comp2, .weather{
+    display: flex;
     font-family: var(--font);
     padding: 12px -12px;
     color: white;
+    max-width: auto;
     font-size: 1.1rem;
     background-color: var(--primary-color);
     align-content: justify;
@@ -247,14 +246,20 @@ body{
 .events{ 
     grid-column: 1/2; 
     grid-row: 2/3;
+    height: 300px;
 }
 .hero{
+    display: flex;
+    color: white;
+    font-family: var(--font);
+    font-size: 1.1rem;
     grid-column: 2/3; 
     grid-row: 1/2;
 }
 .weather{
     grid-column: 2/3; 
     grid-row: 2/3;
+    height: 300px;
 }
 .comp1{ 
     grid-column:  3/4; 
@@ -263,6 +268,7 @@ body{
 .comp2{ 
     grid-column: 3/4; 
     grid-row: 2/3;
+    height: 300px;
 }
 
 footer{
@@ -288,17 +294,18 @@ footer div{
 }
 
 .hero-button{
+
     transition-duration: 0.75s;
-    display: block;
     position: relative;
     background-color: var(--paragraph-background-color);
 	color: #fff;
+    justify-content: center;
 	text-align: center;
 	padding: 8px;
-    top: 70%;
-    left: 64%;
-    max-width: 164px;
-    max-height: auto;
+    top: 80%;
+    left: 60%;
+    width: 164px;
+    height: 56px;
 	text-decoration: none;
 	font-size: 0.9rem;
     font-family: var(--font);
@@ -311,13 +318,20 @@ footer div{
 	color: var(--nav-hover-link-color);
 }
 
+.wrapper
+{
+    width:100px;
+    
+}
+
 .hero-img{
-    position: absolute;
-    display: block;
-    left: 33.6%;
-    top: 33.15%;
-    width: 624px;
-    height: 331px;
+    
+    position: relative;
+    display: inline;
+    left: 0%;
+    top: 0%;
+    width: 800px;
+    height: 600px;
     border-radius: 48px;
     opacity: 75%;
 }
@@ -343,19 +357,8 @@ footer div{
     left: 32%
 }
 
-/***********************************************/
-/** Media Queries for views *************/
-/***********************************************/
+@media screen and (min-width: 960px) {
 
-
-/***********************************************/
-/** DESKTOP VIEW DEFAULTS *************/
-/***********************************************/
-
-@media (min-width: 768px) {
-
-    .content {max-width:960px}
-    
 	nav {
 		flex-direction: row;
 	}
@@ -377,140 +380,105 @@ footer div{
 
 
 
-/***********************************************/
-/** TABLET VIEW DETAILS *************/
-/***********************************************/
+/* #region Tablet Size */
 @media screen and (min-width: 600px) and (max-width: 960px){
-  .content {max-width:600px;}
 
-  nav{
-    margin-top: 32px;
-    left: 24%;
-    margin-right: -48px;
-  }
+    .content{max-width: 600px;}
 
-  .topnav{ 
-    display: none; 
+    nav{
+        display: none;
+      }
 
+    .topnav{
+        display: block;
+        padding: 64px; 
+        border-radius: 42px;
+        margin-top: -16px;
+    }
+    .topnav a.icon{ 
+        right: 8%; 
+        top: 2.5%; 
+        border-radius: 28px; 
+        width: 100px;
     }
 
+    .topnav #myLinks { height: 348px;}
 
-    .banner{ 
-        margin-top: 148px;
-        padding: 48px;
+    .topnav a{
+        position:relative;
+        text-align: center;
+        width: 100px;
+        padding: 16px;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        right: -65%; top: 28%;
     }
 
-    .banner-button {
+    .banner{ padding: 48px;}
+
+    .banner-button 
+    {
         margin-left: 0%; 
         margin-top: 0%;
     }
 
-  .title {
-      font-size: 0rem;
-      text-align: justify;
-      opacity: 0;
-  }
-  .logo{
-      width: 80px;
-      height: auto;
-      margin-top: 25px;
-      margin-left: 25px;
-  }
-
-  .grid {
-      display: grid;
-      grid-template-columns: auto auto;
-      margin-top: 32px;
-      margin-left: 5px;
-      margin-right: 5px;
-      column-gap: 12px;
-      height: calc(75vh - 10px);
-
-  }
-
-  .news{ grid-column: 1/2; grid-row: 1/2;}
-  .events{ grid-column: 1/2; grid-row: 2/3;}
-  .hero{ grid-column: 2/3; grid-row: 1/2;}
-  .weather{ grid-column: 2/3; grid-row: 2/3;}
-  .comp1{ grid-column:  3/4; grid-row: 1/2;}
-  .comp2{ grid-column: 3/4; grid-row: 2/3;}
-
-
-  .news, .events, .comp1, .comp2, .hero, .weather{
-
-      padding: 32px;
-      border-radius: 36px;
-      width: 214px;
-      height: 248px;
-  }
-
-
-  .text-inner{padding: 8px; width: 364px;}
-
-  .hero-button{
-    left: 8%;
-  }
-
-
-  .text-inner{
-      text-align: justify;
-      margin-top: 0%;
-      margin-left: 0%;
-  }
-
-  footer{
-      display: flex;
-      flex-direction: row;
-      padding: 12px;
-      margin-left: 5%;
-      margin-top: 4px;
-  }
-  footer div{
-      display: block;
-      color: #fff;
-      font-family: var(--font);
-      text-align: center;
-      margin: 6px ;
-      font-size: 0.75rem;
-  }
-
-    .hero-img{
-        position: absolute;
-        display: block;
-        left: 34.25%;
-        top: 56.15%;
-        width: 280px;
-        height: 316px;
-        border-radius: 40px;
-        opacity: 75%;
+    .hero-button
+    {
+        left: 92%;
+        top: 75%;
     }
 
-    .currentTemp{
-        position: absolute;
-        display: block;
-        top: 112%;
-        left: 0%
+
+    .news, .events, .comp1, .comp2, .weather{
+
+        margin-right: -50%;
+        margin-left: 0%;
+        border-radius: 36px;
+        width: auto;
+        height: 400px;
+        
     }
 
-    .currentWSpeed{
-        position: absolute;
-        display: block;
-        top: 168%;
-        left: 0%
+    .hero{ grid-column: 1/2; grid-row: 1/2;}
+    .weather{ grid-column: 1/2; grid-row: 2/3;}
+    .news{ grid-column: 1/2; grid-row: 3/4;}
+    .events{ grid-column: 1/2; grid-row: 4/5;}
+    .comp1{ grid-column:  1/2; grid-row: 5/6;}
+    .comp2{ grid-column: 1/2; grid-row: 6/7;}
+
+    .hero-img
+    {
+        max-width: 800px;
+        height: 400px;
+       
     }
 
-    .windchill{
-        position: absolute;
-        display: block;
-        top: 224%;
-        left: 0%
+    .title {
+        font-size: 0rem;
+        text-align: justify;
+        opacity: 0;
+    }
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 6px;
+        margin-left: -3%;
+        margin-top: 1932px;
     }
 
 }
 
-/***********************************************/
-/** PHONE VIEW DETAILS *************/
-/***********************************************/
+/* #endregion */
+
+/* #region Phone Size */
 @media screen and (max-width: 600px) {
     .content {max-width:100%;}
 
@@ -612,7 +580,8 @@ footer div{
     }
 
     .hero-button{
-        left: 50%;
+        left: 25%;
+        top: 85%;
     }
 
     .hero-img{
@@ -646,6 +615,6 @@ footer div{
         top: 224%;
         left: 0%
     }
-
-
 }
+
+/* #endregion */
