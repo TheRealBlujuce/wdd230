@@ -1,0 +1,384 @@
+
+/* Style inputs, select elements and textareas */
+input[type=text], input[type=tel], input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 26px;
+    height: 64px;
+    font-family: var(--font);
+    font-size: large;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, select:focus
+{
+    outline: 3px solid red;
+    border: 0px solid #ccc;
+}
+
+textarea:focus
+{
+    outline: 3px solid blue;
+    border: 0px solid #ccc;
+}
+
+
+/* Style the label to display next to the inputs */
+label {
+   
+    display: none;
+}
+
+form
+{   
+    justify-content: center;
+    align-content: center;
+    max-width: 1280px;
+    width: auto;
+    margin-left: -28%;
+    margin-top: 2%;
+    
+}
+
+/* Style the submit button */
+input[type=submit]{
+    background-color: #D57A66;
+    color: white;
+    padding: 22px;
+    border: none;
+    width: 232px;
+    border-radius: 48px;
+    cursor: pointer;
+    float: right;
+    margin-top: 8px;
+    font-family: var(--font);
+    font-size: large;
+    transition-duration: 0.75s;
+}
+
+
+/* Style the container */
+.container {
+    border-radius: 32px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    max-width: 1028px;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    box-shadow: 0 0 64px #333;
+}
+
+.mFee
+{
+    padding: 6px;
+    border: 0px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 26px;
+    height: 64px;
+    font-family: var(--font);
+    font-size: large;
+    color: white;
+}
+
+.mTiers
+{
+    padding: 12px;
+    height: 64px;
+    font-family: var(--font);
+    font-size: xx-large;
+    color: white;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25-right {
+    float: right;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+textarea{
+    resize: none;
+}
+
+table {
+    font-family: var(--font);
+    max-width: 1280px;
+    width: 100%;
+    color: white;
+}
+
+td, th {
+    border: 3px solid var(--secondary-color);
+    text-align: center;
+    padding: 12px;
+    border-radius: 18px;
+    background-color: var(--secondary-color);
+   
+}
+
+.thanks{
+    font-family: var(--font);
+    font-size:10rem;
+    color: white;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+/* #region Phone Size */
+
+    @media screen and (max-width: 464px) {
+        .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        form{
+            padding: 6px;
+            max-width: 500px;
+            margin-left: 0%;
+        }
+
+        .container
+        {
+            margin-left: auto;
+            width: 382px;
+        }
+
+        td, th {
+            padding: 12px 0px;
+        }
+        table
+        {
+            margin-left: -13px;
+        }
+        input[type=submit]
+        {
+            margin-top: 8px;
+        }
+        input[type=text], input[type=tel], input[type=email],select, textarea
+        {
+            margin-top: 8px;
+        }
+
+        .j-footer
+        {
+            margin-top: 100px;
+        }
+    } 
+
+/* #endregion */
+
+/* #region Medium Phone Size */
+
+    @media screen and (min-width: 464px) and (max-width: 600px){
+
+        .col-25, .col-75, input[type=submit] 
+        {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        form{
+            padding: 6px;
+            max-width: 600px;
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        td, th {
+            padding: 12px 2px;
+        }
+        table
+        {
+            margin-left: 0px;
+        }
+
+        input[type=submit]
+        {
+            margin-top: 8px;
+        }
+
+        input[type=text], input[type=tel], input[type=email],select, textarea
+        {
+            margin-top: 8px;
+        }
+
+        .container
+        {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
+            width: auto;
+        }
+
+        .j-footer
+        {
+            margin-top: 100px;
+        }
+    }
+/* #endregion */
+
+/* #region Tablet Size */
+
+    @media screen and (min-width: 600px) and (max-width: 960px){
+
+        .col-25, .col-75, input[type=submit] 
+        {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        form{
+            padding: 16px;
+            max-width: 880px;
+            width: 100%;
+            margin-left: -2%;
+           
+        }
+
+        input[type=submit]
+        {
+            margin-top: 8px;
+        }
+
+        input[type=text], input[type=tel], input[type=email],select, textarea
+        {
+            margin-top: 8px;
+        }
+
+        .container
+        {
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            max-width: 890px;
+            width: auto;
+        }
+
+        .j-footer
+        {
+            margin-top: 100px;
+            margin-left: 2%;
+        }
+        
+    }
+
+/* #endregion */
+
+/* #region Large Tablet Size */
+
+    @media screen and (min-width: 960px) and (max-width: 1280px){
+
+        .col-25, .col-75, input[type=submit] 
+        {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        form{
+            padding: 24px;
+            max-width: 1280px;
+            width: 100%;
+            margin-left: -2%;
+        }
+
+        input[type=submit]
+        {
+            margin-top: 8px;
+        }
+
+        input[type=text], input[type=tel], input[type=email],select, textarea
+        {
+            margin-top: 8px;
+        }
+
+        .container
+        {
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            max-width: 1280px;
+            width: auto;
+        }
+
+        .j-footer
+        {
+            margin-top: 100px;
+            margin-left: 2%;
+        }
+        
+    }
+
+/* #endregion */
+
+/* #region Almost Fullscreen*/
+
+@media screen and (min-width: 1280px) and (max-width: 1400px){
+
+    .container
+    {
+        max-width: 1120px;
+        width: 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    form
+    {   
+        justify-content: center;
+        align-content: center;
+        max-width: 1280px;
+        width: auto;
+        margin-left: -21.5%;
+        margin-top: 2%;
+    }
+
+    input[type=submit]
+    {
+        margin-top: 8px;
+    }
+
+    input[type=text], input[type=tel], input[type=email],select, textarea
+    {
+        margin-top: 8px;
+    }
+
+
+    .j-footer
+    {
+        margin-top: 100px;
+        margin-left: 2%;
+    }
+
+
+}
+
+/* #endregion */
