@@ -7,22 +7,24 @@ div.cards
 }
 
 section {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary-color);
+    box-shadow: 0 1 32px #333;
+    border-radius: 32px;
+
     width: 340px;
-    height: 540px;
+    height: 300px;
     overflow: hidden;
+    
   }
   
   /* Set the style for the prophet's name */
-  h2, h3 {
-    background-color: #333;
+  .cardInfo {
+    
     color: #fff;
     font-size: 24px;
-    padding: 10px;
+    padding: 24px;
     margin: 0;
+    text-align: center;
   }
   
   /* Set the style for the prophet's portrait image */

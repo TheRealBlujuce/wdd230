@@ -155,7 +155,6 @@
 .banner{
     display: flex;
 	flex-direction: column;
-    
 	background-color: var(--nav-background-color);
 	text-align: justify;
     align-content: center;
