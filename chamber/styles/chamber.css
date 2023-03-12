@@ -500,12 +500,35 @@ footer div{
         margin-left: 25px;
     }
 
-    .windchill, .currentTemp, .currentWSpeed
+    
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
     {
         position: relative;
         align-content: justify;
-        left: 0%;
-        top: 50%;
+        left: -27%;
+        top: 25%;
+    }
+
+    .condition
+    {
+        left: -27%;
+        top: 25%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 80%;
+        top: -35%;
     }
 
     footer{
@@ -611,12 +634,34 @@ footer div{
         margin-left: -6px;
     }
 
-    .windchill, .currentTemp, .currentWSpeed
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
     {
         position: relative;
         align-content: justify;
-        left: 0%;
-        top: 50%;
+        left: -170%;
+        top: 65%;
+    }
+
+    .condition
+    {
+        left: -170%;
+        top: 60%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 25%;
+        top: -25%;
     }
 
     
@@ -750,12 +795,41 @@ footer div{
         transform: translate(16%, 396%);
     }
 
-    .windchill, .currentTemp, .currentWSpeed
+    
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
     {
         position: relative;
         align-content: justify;
-        left: 0%;
-        top: 50%;
+        left: -70%;
+        top: 55%;
+    }
+
+    .condition
+    {
+        left: -70%;
+        top: 45%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 80%;
+        top: -45%;
+    }
+
+    .weatherImg
+    {
+        width: 200px;
+        height: 200px;
     }
     .text-inner
     {
