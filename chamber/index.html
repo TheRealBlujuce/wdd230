@@ -67,7 +67,7 @@
             <div class="hero">
                 
                 <div>
-                    <img class="hero-img" src="./images/wdd230-org.jpg">
+                    <img class="hero-img" src="./images/gamedev-img.jpg">
                     
                 </div>
                 
@@ -82,12 +82,21 @@
             </div>
 
             <div class="weather">
-                <p class="text-inner">
-                    Weather
-                    <span id="temp" class="currentTemp"> current temp </span>
-                    <span id="windspeed" class="currentWSpeed"> current windspeed </span>
-                    <span id="windchill" class="windchill"> current windchill </span>
-                </p>
+                
+                <div>
+                    <img id="weather-icon" width="275px" height="275px">
+                    <h1 id="temp" class="currentTemp"> </h1>
+                </div>
+                
+                <div>
+                    <span id="condition" class="condition"></span>
+                    <div class="windIndication">
+                        <span id="windspeed" class="currentWSpeed"> current windspeed </span>
+                        <span id="windchill" class="windchill"> current windchill </span>
+                    </div>
+                  
+                </div>
+                
             </div>
             
             <div class="comp1">
@@ -113,5 +122,5 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather-api.js"></script>
 </html>

@@ -331,13 +331,34 @@ footer div{
 }
 
 
-.windchill, .currentTemp, .currentWSpeed
+.windchill, .condition, .currentWSpeed
 {
     position: relative;
     align-content: justify;
-    left: 50%;
-    top: 50%;
+    left: 0%;
+    top: 35%;
+    font-size: large;
+    padding: 8px;
+
 }
+
+.windIndication
+{
+    position: relative;
+    align-content: justify;
+    left: -5%;
+    top: 40%;
+}
+
+.currentTemp
+{
+    position: relative;
+    align-content: justify;
+    left: 90%;
+    top: -40%;
+}
+
+
 
 .chamber-link
 {
