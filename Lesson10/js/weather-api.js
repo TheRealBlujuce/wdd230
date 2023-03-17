@@ -1,6 +1,6 @@
 // weather api url
 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&APPID=9fa25c11f574e5d2147865c9d1ceb74e"
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&APPID=9fa25c11f574e5d2147865c9d1ceb74e"
 
 // select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
