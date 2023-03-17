@@ -1,5 +1,6 @@
 div.cards
 {
+    margin-top: 4%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* create a grid with columns that are at least 340px wide and expand to fill the available space */
     gap: 20px; /* add some space between the cards */
