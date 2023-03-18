@@ -1,32 +1,13 @@
 
-.discover-grid
-{
+.discover-grid {
     display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
     column-gap: 32px;
     row-gap: 12px;
     margin-left: 16px;
     margin-top: 4%;
     content-visibility: auto;
-}
-
-.tile1{ grid-column: 1/2; grid-row: 1/2;}
-.tile2{ grid-column: 2/3; grid-row: 1/2;}
-.weather{ grid-column: 1/3; grid-row: 2/3;}
-.tile3{ grid-column: 1/2; grid-row: 3/4;}
-.tile4{ grid-column: 2/3; grid-row: 3/4;}
-.tile5{ grid-column: 1/2; grid-row: 4/5;}
-.tile6{ grid-column: 2/3; grid-row: 4/5;}
-
-
-.img
-{
-    display: flex;
-    transition-duration: 0.25s;
-    border-radius: 64px;
-    width: 900px;
-    box-shadow: 0 0 32px #333;
-}
-
+  }
 
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .weather
 {
@@ -35,6 +16,7 @@
     text-align: center;
     color: white;
     content-visibility: auto;
+    width: auto;
 }
 
 .innerText
@@ -51,7 +33,22 @@
 
 .imgHover{
     display: flex;
-    width: 200px;
+}
+
+.imgHover img {
+    transition-duration: 0.75s;
+    width: auto;
+    max-width: 100%;
+    background-image: url("../images/gamedev-art.jpg");
+    background-size:cover;
+    background-position: center;
+    border-radius: 64px;
+
+}
+
+.tile3 img, .tile4 img, .tile5 img, .tile6 img
+{
+    width: 900px;
 }
 
 .imgHover:hover .innerText
@@ -72,15 +69,16 @@
     padding: 64px;
     height: 125px;
     text-align: center;
-     margin-left: 25%;
+    margin-left: 25%;
     content-visibility: auto;
+    grid-column: 1/3; grid-row: 1/3;
 }
 
 .views{
     text-align: center;
     padding: 24px;
     margin-top: 64px;
-    margin-left: -564px;
+    margin-left: -608px;
 }
 
 
@@ -100,9 +98,19 @@
         display: grid;
         column-gap: 32px;
         row-gap: 12px;
-        margin-left: 2px;
+
     }
-    
+
+    .img
+    {
+        max-width: 300%;
+    }
+
+    .tile2 img, .tile3 img, .tile4 img, .tile5 img, .tile6 img
+    {
+        width: 1176px;
+    }
+
     .tile1{ grid-column: 1/3; grid-row: 1/2;}
     .tile2{ grid-column: 1/3; grid-row: 2/3;}
     .weather{ grid-column: 1/3; grid-row: 3/4;}
@@ -112,9 +120,25 @@
     .tile6{ grid-column: 1/3; grid-row: 7/8;}
     
     .weather{
-        width: 900px;
-        margin: 0%;
+        width: fit-content;
+        margin: 8px;
     }
+
+    .weather p{
+        width: 100%;
+        margin-top: 16px;
+        margin-left: -32px;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .views{
+        width: 100%;
+        text-align: center;
+        margin-top: -12px;
+        margin-left: 0px;
+    }
+    
     
     .d-footer
     {
@@ -128,7 +152,7 @@
 
 /* #region Phone Size */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
 
     .topnav a.icon{
@@ -145,13 +169,14 @@
         margin-left: 2px;
     }
 
-    .img
-    {
-        width: 416px;
-        height: 364px;
-        border-radius: 42px;
-    }
 
+
+    .tile3 img, .tile4 img, .tile5 img, .tile6 img
+    {
+        width: 800px;
+        margin-left: 0px;
+    }
+    
     .innerText
     {
         width: 364px;
@@ -167,16 +192,25 @@
     .tile6{ grid-column: 1/3; grid-row: 7/8;}
     
     .weather{
-        width: 416px;
-        height: 200px;
-        margin: 0%;
+        width:fit-content;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weather p{
+        width: 100%;
+        margin-top: -32px;
+        margin-left: -32px;
+        font-size: 1.25rem;
+        text-align: center;
     }
 
     .views{
+        width: 100%;
         text-align: center;
-        padding: 32px;
-        margin-top: 76px;
-        margin-left: -432px;
+        margin-top: -12px;
+        margin-left: 0px;
     }
     
     
