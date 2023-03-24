@@ -1,0 +1,230 @@
+/* Body styles */
+body {
+    background-color: rgb(255, 59, 101);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    
+    /* background-color: #333; */
+    color: #fff;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    transition-duration: 0.25s;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 12px;
+}
+
+nav a:hover {
+    transition-duration: 0.25s;
+    background-color: #fff;
+    color: #333;
+    border-radius: 16px;
+}
+
+/* Header styles */
+h1 {
+    color: white;
+    font-size: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 8px;
+    padding: 32px;
+}
+/* Image styles */
+.grid-container img {
+    transition: opacity 2s ease-in-out;
+    transition-duration: 0.5s;
+    max-width: 1400px;
+    width: 100%;
+    height: 276px;
+    opacity: 85%;
+    border-radius: 24px;
+}
+
+.grid-container img:hover {
+    transition: opacity 2s ease-in-out;
+    transition-duration: 0.5s;
+    opacity: 25%;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+
+.icon-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.icon-img
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 48px;
+    border-radius: 32px;
+}
+
+/* Section styles */
+section {
+    margin: 50px 0;
+}
+
+/* Call to action styles */
+.cta {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cta:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Social media link styles */
+.social-media {
+    display: flex;
+    justify-content: justify;
+}
+
+.social-media img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+
+
+/* Weather card styles */
+.weather {
+    background-color: #ff7a97;
+    border-radius: 32px;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 1640px;
+    width: 100%;
+    height: 480px;
+}
+
+.weather h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.weather p, .weather ul {
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.weather ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weather li {
+    margin-bottom: 10px;
+}
+
+/* Specialty drink submission styles */
+
+
+.submission h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.submission p {
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+.hero {
+    background: url("../images/raspberries.jpg") center center/cover no-repeat;
+    height: 932px;
+    position: relative;
+    opacity: 85%;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content a {
+    color: white;
+    text-decoration: underline;
+  }
+
+/* Responsive layout - break the grid into two columns on smaller screens */
+@media (max-width: 767px) {
+    .weather, .submission {
+      max-width: 364px;
+    }
+    .hero{
+        height: 900px;
+    }
+    
+    nav a{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin: -1px;
+        
+    }
+  }
+
