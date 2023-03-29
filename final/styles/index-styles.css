@@ -1,6 +1,6 @@
 /* Body styles */
 body {
-    background-color: rgb(255, 59, 101);
+    background-color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ nav {
 }
 
 nav a {
-    transition-duration: 0.25s;
+    transition-duration: 0.5s;
     color: #fff;
     text-decoration: none;
     padding: 20px;
@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    transition-duration: 0.25s;
+    transition-duration: 0.5s;
     background-color: #fff;
     color: #333;
     border-radius: 16px;
@@ -58,18 +58,18 @@ h2{
 /* Image styles */
 .grid-container img {
     transition: opacity 2s ease-in-out;
-    transition-duration: 0.5s;
-    max-width: 1400px;
+    transition-duration: 0.25s;
     width: 100%;
-    height: 276px;
+    height: 280px;
     opacity: 85%;
     border-radius: 24px;
+    box-shadow: 0 0 24px #33333393;
 }
 
 .grid-container img:hover {
     transition: opacity 2s ease-in-out;
-    transition-duration: 0.5s;
-    opacity: 25%;
+    transition-duration: 0.25s;
+    opacity: 60%;
 }
 
 .fade-in {
@@ -77,21 +77,6 @@ h2{
     transition: opacity 2s ease-in-out;
 }
 
-
-.icon-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-}
-
-.icon-img
-{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    width: 48px;
-    border-radius: 32px;
-}
 
 /* Section styles */
 section {
@@ -116,37 +101,64 @@ section {
 }
 
 /* Social media link styles */
-.social-media {
-    display: flex;
-    justify-content: justify;
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
-
-.social-media img {
-    height: 50px;
+  
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-icons a {
     margin: 0 10px;
 }
 
+.footer-icons h4{
+    margin: 0 10px;
+}
+
+.icon-img
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 48px;
+    border-radius: 14px;
+}
 
 
 /* Weather card styles */
+.weather-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .weather {
-    background-color: #ff7a97;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 24px #33333393;
     border-radius: 32px;
     margin: 50px auto;
     padding: 32px;
-    max-width: 1640px;
-    width: 100%;
+    max-width: 960px;
+    width: 75%;
     height: 480px;
 }
 
 .weather h2 {
-    color: white;
+    color: black;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .weather p, .weather ul {
-    color: white;
+    color: black;
     font-size: 24px;
     line-height: 1.5;
     margin: 10px 0;
@@ -163,26 +175,113 @@ section {
 
 /* Specialty drink submission styles */
 
+.ingredients{
+    
+    color: rgb(50, 50, 50);
+}
+
+.submission {
+    box-shadow: 0 0 24px #33333393;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 32px;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 960px;
+    width: 75%;
+    height: 480px;
+}
 
 .submission h2 {
-    color: white;
+    color: black;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 .submission p {
-    color: white;
+    color: black;
     font-size: 24px;
     line-height: 1.5;
     margin: 10px 0;
 }
 
+.btn {
+    transition-duration: 0.25s;
+    display: inline-block;
+    padding: 22px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 16px;
+  }
+  
+  .btn:hover {
+    transition-duration: 0.25s;
+    color: rgb(255, 255, 255);
+    background-color: #f72665;
+  }
 
+/* Info Card Systels */
+.info-card {
+    box-shadow: 0 0 24px #33333393;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 32px;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 960px;
+    width: 75%;
+    height: 480px;
+}
+
+.info-card h2 {
+    color: black;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.info-card p {
+    color: black;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.info-card a {
+    margin-top: 48px;
+    transition-duration: 0.25s;
+    display: inline-block;
+    padding: 22px;
+    padding-left: 64px;
+    padding-right: 64px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 16px;
+}
+
+.info-card a:hover {
+    transition-duration: 0.25s;
+    color: rgb(255, 255, 255);
+    background-color: #f72665;
+}
+
+/* Hero image styles */
 .hero {
     background: url("../images/raspberries.jpg") center center/cover no-repeat;
     height: 932px;
     position: relative;
-    opacity: 85%;
+    opacity: 80%;
   }
   
   .hero-content {
@@ -213,17 +312,18 @@ section {
 
 /* Responsive layout - break the grid into two columns on smaller screens */
 @media (max-width: 767px) {
-    .weather, .submission {
-      max-width: 364px;
+    .weather-grid-container {
+        grid-template-columns: 1fr;
     }
+
     .hero{
         height: 900px;
     }
     
     nav a{
-        padding-left: 30px;
-        padding-right: 30px;
-        margin: -1px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 8px;
         
     }
   }
