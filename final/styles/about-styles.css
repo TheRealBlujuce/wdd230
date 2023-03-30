@@ -121,7 +121,7 @@
 
 
     .map{
-        height: 280px;
+        height: 180px;
     }
 
     .card ul
@@ -136,17 +136,4 @@
         height: fit-content;
     }
     
-  }
-
-  @media only screen and (max-width: 375px) {
-    /* Your CSS rules for iPhone devices here */
-    nav a{
-        padding-left: 32px;
-        padding-right: 32px;
-        margin: 8px;
-    }
-
-        .map{
-        height: 180px;
-    }
   }
