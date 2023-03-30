@@ -1,0 +1,139 @@
+
+/* Location Card */
+
+.location-card {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 24px #33333393;
+    border-radius: 32px;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 1280px;
+    width: 100%;
+    height: 700px;
+    font-family: var(--font), sans-serif;
+}
+
+/* Hero Image */
+
+.hero {
+    background: url("../images/blueberries.jpg") center center/cover no-repeat;
+    height: 932px;
+    position: relative;
+    opacity: 80%;
+}
+
+/* Card styles */
+
+.card {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 24px #33333393;
+    border-radius: 32px;
+    margin: 50px auto;
+    padding: 32px;
+    max-width: 1280px;
+    width: auto;
+    height: 480px;
+    font-family: var(--font), sans-serif;
+}
+
+.card p {
+    color: black;
+    font-size: 24px;
+    font-family: var(--font), sans-serif;
+    margin: 10px 0;
+}
+
+.card a{
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-decoration: none;
+    font-family: var(--font), sans-serif;
+}
+
+.card ul
+{
+    line-height: 12px;
+    list-style: none;
+    font-family: var(--font), sans-serif;
+}
+
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    margin: 0;
+}
+    
+
+/* Info Card Styles */
+
+.info-card{
+
+    width: auto;
+    height: 480px;
+    font-family: var(--font), sans-serif;
+}
+
+/* Google Map */
+
+.map{
+    width: 100%;
+    height: 332px;
+    border:0; 
+    border-radius: 24px;
+}
+
+/* Responsive layout - break the grid into two columns on smaller screens */
+@media (max-width: 767px) {
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero{
+        height: 900px;
+    }
+    
+    nav a{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin: 8px;
+        
+    }
+
+    .location-card
+    {
+        width: 75%;
+        height: 764px;
+    }
+
+
+    .map{
+        height: 280px;
+    }
+
+    .card ul
+    {
+        line-height: 12px;
+        list-style: none;
+        margin-left: -40px;
+    }
+
+    .info-card{
+
+        height: fit-content;
+    }
+    
+  }
