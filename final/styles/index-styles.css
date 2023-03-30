@@ -375,6 +375,12 @@ footer {
         
     }
 
+    .footer-icons h4{
+        margin: 0 10px;
+        font-family: var(--font), sans-serif;
+        font-size: 12px;
+    }
+
   }
 
   @media only screen and (max-width: 375px) {
@@ -387,4 +393,5 @@ footer {
         padding-right: 32px;
         margin: 8px;
     }
+
   }
