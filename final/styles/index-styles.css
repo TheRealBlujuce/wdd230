@@ -145,6 +145,7 @@ footer {
 }
 
 
+
 /* Weather card styles */
 .weather-grid-container {
     display: grid;
@@ -292,7 +293,7 @@ footer {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 22px;
     border-radius: 16px;
     font-family: var(--font), sans-serif;
 }
@@ -353,8 +354,8 @@ footer {
     }
     
     nav a{
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
         margin: 8px;
         
     }
