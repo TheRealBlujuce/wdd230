@@ -96,7 +96,7 @@
 }
 
 /* Responsive layout - break the grid into two columns on smaller screens */
-@media (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
     .grid-container {
         grid-template-columns: 1fr;
@@ -144,5 +144,9 @@
         padding-left: 32px;
         padding-right: 32px;
         margin: 8px;
+    }
+
+        .map{
+        height: 180px;
     }
   }
