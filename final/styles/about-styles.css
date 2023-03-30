@@ -12,7 +12,7 @@
     padding: 32px;
     max-width: 1280px;
     width: 100%;
-    height: 700px;
+    height: 80%;
     font-family: var(--font), sans-serif;
 }
 
@@ -38,7 +38,7 @@
     padding: 32px;
     max-width: 1280px;
     width: auto;
-    height: 480px;
+    height: 80%;
     font-family: var(--font), sans-serif;
 }
 
@@ -82,7 +82,7 @@
 .info-card{
 
     width: auto;
-    height: 480px;
+    height: 80%;
     font-family: var(--font), sans-serif;
 }
 
@@ -136,4 +136,13 @@
         height: fit-content;
     }
     
+  }
+
+  @media only screen and (max-width: 375px) {
+    /* Your CSS rules for iPhone devices here */
+    nav a{
+        padding-left: 32px;
+        padding-right: 32px;
+        margin: 8px;
+    }
   }
