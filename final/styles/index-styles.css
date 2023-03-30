@@ -372,8 +372,20 @@ footer {
         padding-left: 32px;
         padding-right: 32px;
         margin: 8px;
-        background-color: rgba(255, 255, 255, 0.74);
-        color: black;
+
+    }
+
+    nav a:hover {
+        transition-duration: 0.5s;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+    }
+
+    nav a:active {
+        transition-duration: 0.5s;
+        background-color: #fff;
+        color: #333;
+        border-radius: 16px;
     }
 
     .footer-icons h4{
@@ -394,5 +406,7 @@ footer {
         padding-right: 32px;
         margin: 8px;
     }
+
+
 
   }
