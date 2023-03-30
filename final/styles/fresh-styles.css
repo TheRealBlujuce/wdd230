@@ -212,12 +212,13 @@ body {
   {
     color: black;
     margin: 0px;
+    font-size: 24px;
     font-family: var(--font), sans-serif;
   }
 
   #popup-close {
     transition-duration: 0.5s;
-    margin-top: 25px;
+    margin-top: 64px;
     background-color: #f72665;
     color: white;
     font-size: large;
