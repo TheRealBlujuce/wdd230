@@ -417,7 +417,7 @@ footer {
         top: 75px;
         left: -250px;
         width: 150px;
-        height: 25%;
+        height: fit-content;
         background-color: rgba(0, 0, 0, 0.952);
         z-index: 100;
         transition: transform 0.3s ease-in-out;
