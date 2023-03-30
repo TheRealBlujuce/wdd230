@@ -1,7 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+:root {
+    /* import the font gamily */
+    --font: "Noto Sans JP";
+}
 /* Body styles */
 body {
     background-color: white;
-    font-family: Arial, sans-serif;
+    font-family: var(--font), sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -27,6 +35,7 @@ nav a {
     text-align: center;
     border-radius: 16px;
     margin: 12px;
+    font-family: var(--font), sans-serif;
 }
 
 nav a:hover {
@@ -42,11 +51,13 @@ h1 {
     font-size: 40px;
     margin: 50px 0;
     text-align: center;
+    font-family: var(--font), sans-serif;
 }
 
 h2{
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: var(--font), sans-serif;
 }
 
 .grid-container {
@@ -93,6 +104,7 @@ section {
     padding: 20px;
     text-align: center;
     text-transform: uppercase;
+    font-family: var(--font), sans-serif;
 }
 
 .cta:hover {
@@ -115,10 +127,12 @@ footer {
   
 .footer-icons a {
     margin: 0 10px;
+    font-family: var(--font), sans-serif;
 }
 
 .footer-icons h4{
     margin: 0 10px;
+    font-family: var(--font), sans-serif;
 }
 
 .icon-img
@@ -155,6 +169,7 @@ footer {
     color: black;
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: var(--font), sans-serif;
 }
 
 .weather p, .weather ul {
@@ -162,15 +177,18 @@ footer {
     font-size: 24px;
     line-height: 1.5;
     margin: 10px 0;
+    font-family: var(--font), sans-serif;
 }
 
 .weather ul {
     list-style: none;
     padding: 0;
+    font-family: var(--font), sans-serif;
 }
 
 .weather li {
     margin-bottom: 10px;
+    font-family: var(--font), sans-serif;
 }
 
 /* Specialty drink submission styles */
@@ -178,6 +196,7 @@ footer {
 .ingredients{
     
     color: rgb(50, 50, 50);
+    font-family: var(--font), sans-serif;
 }
 
 .submission {
@@ -192,12 +211,14 @@ footer {
     max-width: 960px;
     width: 75%;
     height: 480px;
+    font-family: var(--font), sans-serif;
 }
 
 .submission h2 {
     color: black;
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: var(--font), sans-serif;
 }
 
 .submission p {
@@ -205,6 +226,7 @@ footer {
     font-size: 24px;
     line-height: 1.5;
     margin: 10px 0;
+    font-family: var(--font), sans-serif;
 }
 
 .btn {
@@ -219,6 +241,7 @@ footer {
     text-decoration: none;
     font-size: 26px;
     border-radius: 16px;
+    font-family: var(--font), sans-serif;
   }
   
   .btn:hover {
@@ -240,12 +263,14 @@ footer {
     max-width: 960px;
     width: 75%;
     height: 480px;
+    font-family: var(--font), sans-serif;
 }
 
 .info-card h2 {
     color: black;
     font-size: 36px;
     margin-bottom: 20px;
+    font-family: var(--font), sans-serif;
 }
 
 .info-card p {
@@ -253,6 +278,7 @@ footer {
     font-size: 24px;
     line-height: 1.5;
     margin: 10px 0;
+    font-family: var(--font), sans-serif;
 }
 
 .info-card a {
@@ -268,6 +294,7 @@ footer {
     text-decoration: none;
     font-size: 26px;
     border-radius: 16px;
+    font-family: var(--font), sans-serif;
 }
 
 .info-card a:hover {
@@ -282,6 +309,7 @@ footer {
     height: 932px;
     position: relative;
     opacity: 80%;
+    font-family: var(--font), sans-serif;
   }
   
   .hero-content {
@@ -298,16 +326,20 @@ footer {
   .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-family: var(--font), sans-serif;
+    
   }
   
   .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 1rem;
+    font-family: var(--font), sans-serif;
   }
   
   .hero-content a {
     color: white;
     text-decoration: underline;
+    font-family: var(--font), sans-serif;
   }
 
 /* Responsive layout - break the grid into two columns on smaller screens */
