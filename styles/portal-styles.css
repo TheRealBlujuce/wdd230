@@ -1,36 +1,46 @@
-
-
-.portal-header{
-    position: relative;
-    left: 45px;
-    background-color: bisque;
-    width: 448px;
-    height: 116px;
-    border-radius: 16px;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
-.list{
-    position: relative;
-    left: 45px;
+.portal-header, .portal-footer {
+    background-color: #e6e6fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
 }
 
-.name, .portal-title{
-    position: inherit;
-    top: 12px;
-    left: 125px;
+.list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-.last-updated, .copyright{
-    position: inherit;
-    top: 24px;
-    left: 100px;
+.list li {
+    margin: 10px 0;
 }
 
-.portal-footer{
-    position: relative;
-    left: 45px;
-    background-color: bisque;
-    width: 448px;
-    height: 116px;
-    border-radius: 16px;
+.list a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-updated, .copyright {
+    font-size: 0.9em;
+    color: #666;
 }
