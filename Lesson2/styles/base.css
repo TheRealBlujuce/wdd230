@@ -4,14 +4,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #333; /* Darker text for high contrast */
+    background-color: #f9f9f9; /* Light background for readability */
 }
 
 header {
     text-align: center;
     padding: 2rem;
-    background-color: #e6e6fa;
+    background-color: #4a4a73; /* High contrast with white text */
+    color: white;
 }
 
 header h1 {
@@ -33,12 +34,13 @@ header p {
 }
 
 .design-card {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #4a4a73; /* High contrast with white text */
+    border: 1px solid #2e2b47; /* Improved contrast for the border */
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 1.5rem;
+    color: white;
 }
 
 .design-card h2 {
@@ -49,6 +51,15 @@ header p {
 
 .design-card p {
     margin: 0.5rem 0;
+}
+
+.design-card a {
+    color: #5aa0e0; /* Higher contrast link color */
+    text-decoration: none;
+}
+
+.design-card a:hover {
+    text-decoration: underline;
 }
 
 .design-card img {
