@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff; /* Increased contrast with text */
+    color: #222222; /* Slightly darker for better readability */
+}
+
+.portal-header, .portal-footer {
+    background-color: #4a4a73; /* Improved contrast with white text */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto;
+    display: none; /* Hidden by default for mobile */
+}
+
+.list li {
+    margin: 10px 0;
+}
+
+.list a {
+    text-decoration: none;
+    color: #0069b4; /* Darkened link color for better contrast */
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff; /* Explicit white color */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff; /* Ensure links are white */
+}
+
+.navigation a:hover {
+    color: #d1d1f0; /* Light accent color for hover state */
+}
+
+
+.last-updated, .copyright {
+    font-size: 0.9em;
+    color: #e0e0e0; /* Improved contrast against footer background */
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    background-color: #d1d1f0; /* Slightly darker for contrast */
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #222222; /* Darker text for readability */
+}
+
+.hamburger-menu:focus {
+    outline: none;
+    box-shadow: 0 0 5px #005999; /* Updated to match the new link color */
+}
+
+/* Map Styles */
+.map-container {
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+    width: 600px;
+    height: 300px;
+    border: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show the hamburger menu in mobile view */
+    }
+
+    .list {
+        display: none; /* Hide the menu items initially */
+        flex-direction: column;
+        align-items: center;
+        background-color: #d1d1f0; /* Updated for better contrast */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .list.show {
+        display: flex; /* Show the menu items when toggled */
+    }
+}
+
+@media (min-width: 769px) {
+    .list {
+        display: flex; /* Show the menu items in larger views */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .hamburger-menu {
+        display: none; /* Hide the hamburger menu in larger views */
+    }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="stylesheet" href="styles/join.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <header>
+        <img class="logo" src="./images/Chamber of Commerce Logo.webp">
+        <div class="title">
+            <p>Citizens Chamber of Commerce</p>
+            <p class="date">Date is Here</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="">Join</a>
+            <a href="about.html">Discover</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="topnav">
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="">Join</a>
+                <a href="about.html">Discover</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <h3 class="explore-btn">Explore</h3>
+            </a>
+        </div>
+            <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
+                <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
+            </div>
+    </header>
+    <body>
+
+        <!-- Table for Memberships -->
+    <div class="container">
+        <h1 class="mTiers">Membership Tiers</h1>
+        <table>
+            <tr>
+                <th>Perks</th>
+                <th>Free</th>
+                <th>Gold</th>
+                <th>Platinum</th>
+                <th>Diamond</th>
+            </tr>
+            <tr>
+                <td>Invitation to Game Dev Panels</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+            </tr>
+            <tr>
+                <td>3 - Day Early Pass</td>
+                <td>Not Included</td>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+            </tr>
+            <tr>
+                <td>Playtest Upcomming Releases</td>
+                <td>Not Included</td>
+                <td>Not Included</td>
+                <td>Included</td>
+                <td>Included</td>
+            </tr>
+            <tr>
+                <td>2 Day Personal Dev Instruction</td>
+                <td>Not Included</td>
+                <td>Not Included</td>
+                <td>Not Included</td>
+                <td>Included</td>
+            </tr>
+        </table> 
+    </div>
+          <!-- Form -->
+        <div class="container">
+            <form action="thankyou.html">
+                <!-- First Name -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                    </div>
+            </div>
+                <!-- Last Name -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                </div>
+            </div>
+                <!-- Email -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Email</label>
+                </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Email - 12345@email.com" required>
+                    </div>
+            </div>
+               <!-- Phone number -->
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Phone Number</label>
+                </div>
+                    <div class="col-75">
+                        <input type="tel" id="phone" name="phonenumber" placeholder="Phone Number" required>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bName">Business Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="bName" name="bName" placeholder="Business Name" required></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bTitle">Business Title</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="bTitle" name="bTitle" pattern="/^[A-Za-z]+$/" placeholder="Business Title"></input>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="bDesc">Business Description</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Business Description" style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                  <label for="membership">Membership</label>
+                </div>
+                <div class="col-25">
+                  <select id="membership" name="membership" onclick="GetMembershipPrice()" required>
+                    <option value="free">Free Membership</option>
+                    <option value="gold">Gold Membership</option>
+                    <option value="plat">Platinum Membership</option>
+                    <option value="diamond">Diamond Membership</option>
+                  </select>
+                </div>
+                <div class="col-25-right">
+                    <h3 id="mFee" class="mFee">One Time Membership Price - $75</h3>
+                  </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div> 
+
+        <!-- hidden field -->
+        <input type="hidden" id="date" name="date" value="CurrentDay"></input>
+        <input type="hidden" id="time" name="time" value="CurrentTime"></input>
+
+    </body>
+    <footer class="j-footer">
+        <div id="year"></div>
+        <div>Will Marda</div>
+        <div>WDD 230 Project</div>
+        <div id="updated"></div>
+        <div> <a class="chamber-link" href="https://www.google.com/maps/d/viewer?mid=1YsDq-eyXImLdb-fRihMJHGTzI3c&hl=en_US&ll=40.777308000000026%2C-111.888177&z=17">Utah State Capitol, Salt Lake City, Ut, 84103</a></div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/join.js"></script>
+</html>

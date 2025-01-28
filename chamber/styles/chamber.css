@@ -1,0 +1,861 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #9b5262   ;
+    --secondary-color: #713E5A ;
+    --tertiary-color: #736659 ;
+    --accent1-color: #f7dbbc;
+    --accent2-color: #CA6680;
+
+  
+    /* change the values below to your chosen font(s) */
+    --font: "Noto Sans JP";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --font-color: #736659;  /* headlines on a white background */ 
+    --paragraph-background-color: #D57A66  ;
+    --nav-link-color: #736659;
+    --nav-background-color: #9b5262;
+    --nav-hover-link-color: #f7dbbc;
+    --nav-hover-background-color: #CA6680;
+  }
+
+.logo{
+    width: 80px;
+    height: 76px;  
+    padding-right: 12px;
+}
+
+
+
+/* #region Nav Bar*/
+    nav {
+        position: absolute;
+        right: 64px;
+        top: 6px;
+        display: inline-flex;
+        flex-direction: column;
+        background-color: var(--nav-background-color);
+        text-align: center;
+        align-content: center;
+        box-shadow: 0 0 64px #333;
+        margin: 12px auto;
+        border-radius: 48px;
+        max-width: 800px;
+        padding: 12px;
+    }
+    nav div {
+        flex: 1 1 auto;
+    }
+
+    nav a {
+        transition-duration: 0.25s;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 22px;
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 200px;
+        height: auto;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-family: var(--font);
+        border-radius: 32px;
+    }
+
+    nav a:hover {
+        transition-duration: 0.25s;
+        background-color: var(--nav-hover-background-color);
+        color: var(--nav-hover-link-color);
+    }
+
+/* #endregion */
+
+/* #region Burger Bar */
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        
+        background-color: var(--nav-background-color);
+        text-align: justify;
+        align-content: center;
+        box-shadow: 0 0 64px #333;
+        margin: 12px auto;
+        padding: 12px;
+        padding-top: 16px;
+        border-radius: 48px;
+        max-width: auto;
+        transition-duration: 0.75s;
+    }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+    display: none;
+    transition-duration: 0.75s;
+    border-radius: 12px;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        transition-duration: 0.5s;
+        display: block;
+        color: #fff;
+        text-align: justify;
+        padding: 20px;
+        margin-top: 8px;
+        margin-left: 64px;
+        margin-right: 64px;
+        width: auto;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-family: var(--font);
+        border-radius: 24px;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        transition-duration: 0.75s;
+        background: var(--paragraph-background-color);
+        display: block;
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        width: 296px;
+        height: 32px;
+        border-radius: 32px;
+    }
+
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+    transition-duration: 0.25s;
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    }
+
+    /* Style the active link (or home/logo) */
+    .active {
+    transition-duration: 0.75s;
+    background-color: #04AA6D;
+    color: white;
+    } 
+
+    .explore-btn{
+    text-align: center;
+    margin-top: 3px;
+    }
+/* #endregion */
+
+.banner{
+    display: flex;
+	flex-direction: column;
+	background-color: var(--nav-background-color);
+	text-align: justify;
+    align-content: center;
+	box-shadow: 0 0 64px #333;
+	margin: 28px auto;
+    margin-top: 48px;
+    padding: 25px;
+    padding-left: 80px;
+    border-radius: 48px;
+    max-width: 1632px;
+    height: auto;
+    flex: 1 1 auto;
+    text-align: justify;
+    color: white;
+    font-family: var(--font);
+}
+
+
+.banner-button{
+    transition-duration: 0.75s;
+    display: inline-block;
+    background-color: var(--paragraph-background-color);
+	color: #fff;
+	text-align: center;
+	padding: 8px;
+    padding-left: 75px;
+    padding-right: 75px;
+    max-width: 216px;
+    max-height: auto;
+
+ 
+	text-decoration: none;
+	font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 32px;
+}
+
+.banner-button:hover {
+    transition-duration: 0.75s;
+    background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+}
+
+
+.title{
+    display: block;
+    text-align: justify;
+    font-size: 1.1rem;
+    margin-top: -86px;
+    margin-left: 96px;
+    font-family: var(--font);
+    color: white;
+    max-width: 264px;
+}
+
+body{
+    background-color: var(--secondary-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 48px;
+    margin-left: 8px;
+    margin-right: 8px;
+    grid-gap: 12px;
+
+}
+
+.news, .events, .comp1, .comp2, .weather, .hero{
+    display: flex;
+    font-family: var(--font);
+    padding: 12px -12px;
+    color: white;
+    max-width: 800px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    align-content: justify;
+	box-shadow: 0 0 64px #333;
+    border-radius: 48px;
+}
+
+
+.news{ 
+    grid-column: 1/2; 
+    grid-row: 1/2;
+}
+.events{ 
+    grid-column: 1/2; 
+    grid-row: 2/3;
+    height: 496px;
+}
+.hero{
+
+    grid-column: 2/3; 
+    grid-row: 1/2;
+}
+.weather{
+    grid-column: 2/3; 
+    grid-row: 2/3;
+    height: 496px;
+}
+.comp1{ 
+    grid-column:  3/4; 
+    grid-row: 1/2;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center; /* Center element vertically */
+    justify-content: center; /* Center element horizontally */
+}
+.comp2{ 
+    grid-column: 3/4; 
+    grid-row: 2/3;
+    height: 496px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center; /* Center element vertically */
+    justify-content: center; /* Center element horizontally */
+}
+
+.cardInfo {
+    
+    color: #fff;
+    font-size: 24px;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+  }
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    margin-left: 10%;
+}
+
+footer div{
+    display: relative;
+    color: #fff;
+    font-family: var(--font);
+	text-align: center;
+    margin: 20px 32px;
+}
+
+.text-inner{
+    
+    padding: 32px;
+    max-width: 400px;
+    text-align: justify;
+    margin-top: -12px;
+}
+
+.hero-button {
+    transition-duration: 0.75s;
+    position: relative;
+    display: inline-flex;
+    background-color: var(--paragraph-background-color);
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    transform: translate(-125%, 600%);
+    width: 164px;
+    height: 56px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 32px;
+  }
+
+.hero-button:hover {
+    transition-duration: 0.75s;
+    background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+}
+
+.wrapper
+{
+    width:100px;
+    
+}
+
+.hero-img{
+    
+    display: block;
+    max-width: 800px;
+    max-height: 600px;
+    border-radius: 48px;
+    opacity: 75%;
+}
+
+
+.windchill, .condition, .currentWSpeed
+{
+    position: relative;
+    align-content: justify;
+    left: 0%;
+    top: 40%;
+    font-size: large;
+    padding: 8px;
+
+}
+
+.windIndication
+{
+    position: relative;
+    align-content: justify;
+    left: -5%;
+    top: 45%;
+}
+
+.currentTemp
+{
+    position: relative;
+    align-content: justify;
+    left: 90%;
+    top: -40%;
+}
+
+
+
+.chamber-link
+{
+    color: rgb(131, 167, 243);
+    text-decoration:none;
+}
+
+@media screen and (min-width: 1280px) {
+
+	nav {
+		flex-direction: row;
+	}
+	
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	main picture {
+		display: block;
+	}
+
+    .topnav{
+        display: none;
+    }
+}
+
+
+
+/* #region Tablet Size */
+@media screen and (min-width: 600px) and (max-width: 960px){
+
+    .content{max-width: 960px;}
+
+    nav{
+        display: none;
+      }
+
+      .topnav{
+        display: block;
+        padding: 64px; 
+        border-radius: 42px;
+        margin-top: -110px;
+    }
+    .topnav a.icon{ 
+        right: 4%; 
+        top: 2.5%; 
+        border-radius: 28px; 
+        max-width: 200px;
+        /* width: 100%; */
+    }
+
+    .topnav #myLinks { height: 232px;}
+
+    .topnav a{
+        position:relative;
+        text-align: center;
+        max-width: 200px;
+        width: 100%;
+        padding: 16px;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        right: -78.5%; top: 12%;
+    }
+
+    .banner{ padding: 48px;}
+
+    .banner-button 
+    {
+        margin-left: 0%; 
+        margin-top: 0%;
+    }
+
+    .hero-button
+    {
+        transform: translate(24%, 676%);
+    }
+
+    .grid {
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(6, 1fr);
+      }
+      
+
+    .news, .events, .comp1, .comp2, .weather, .hero{
+        display: flex;
+        font-family: var(--font);
+        color: white;
+        max-width: 100%;
+        height: 600px;
+        font-size: 1.1rem;
+        background-color: var(--primary-color);
+        align-content: justify;
+        box-shadow: 0 0 64px #333;
+        border-radius: 48px;
+    }
+
+    
+    .hero
+    {
+        background-image: url("../images/gamedev-img.jpg");
+        background-size:cover;
+        background-position: center;
+        opacity: 75%;;
+    }
+    .hero-img{
+
+        display: none;
+        
+    }
+
+    .text-inner
+    {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .hero{grid-column: 1/3; grid-row: 1/2;}
+    .weather{grid-column: 1/3; grid-row: 2/3;}
+    .news{ grid-column: 1/3; grid-row: 3/4;}
+    .events{grid-column: 1/3; grid-row: 4/5;}
+    .comp1{grid-column: 1/3; grid-row: 5/6;}
+    .comp2{ grid-column: 1/3; grid-row: 6/7;}
+
+
+
+    .title {
+        font-size: 1rem;
+        text-align: justify;
+        margin-left: 20%;
+    }
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
+    {
+        position: relative;
+        align-content: justify;
+        left: -27%;
+        top: 25%;
+    }
+
+    .condition
+    {
+        left: -27%;
+        top: 25%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 80%;
+        top: -35%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 1px;
+        margin-left: -3%;
+        margin-top: 32px;
+        font-size: 0.75rem;
+    }
+
+}
+
+/* #endregion */
+
+/* #region Medium Tablet Size */
+
+@media screen and (min-width: 960px) and (max-width: 1280px){
+
+    nav{
+        display: none;
+      }
+
+    .topnav{
+        display: block;
+        padding: 64px; 
+        border-radius: 42px;
+        margin-top: -110px;
+    }
+    .topnav a.icon{ 
+        right: 4%; 
+        top: 2.5%; 
+        border-radius: 28px; 
+        max-width: 200px;
+        width: 100%;
+    }
+
+    .topnav #myLinks { height: 232px;}
+
+    .topnav a{
+        position:relative;
+        text-align: center;
+        max-width: 200px;
+        width: 100%;
+        padding: 16px;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        right: -78.5%; top: 12%;
+    }
+
+    .banner{ padding: 48px;}
+
+    .banner-button 
+    {
+        margin-left: 0%; 
+        margin-top: 0%;
+    }
+
+    .hero-button
+    {
+        transform: translate(-110%, 250%);
+    }
+
+    .news, .events, .comp1, .comp2, .weather, .hero{
+        display: flex;
+        font-family: var(--font);
+        padding: 12px -12px;
+        color: white;
+        max-width: 400px;
+        font-size: 1.1rem;
+        background-color: var(--primary-color);
+        align-content: justify;
+        box-shadow: 0 0 64px #333;
+        border-radius: 48px;
+    }
+
+    .hero-img{
+
+        max-width: 400px;
+        max-height: 300%;
+
+
+    }
+
+    .title {
+        font-size: 1rem;
+        text-align: justify;
+        margin-left: 12%;
+    }
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .text-inner
+    {
+        font-size: .9rem;
+        width: 75%;
+        margin-top: -8px;
+        margin-left: -6px;
+    }
+
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
+    {
+        position: relative;
+        align-content: justify;
+        left: -170%;
+        top: 65%;
+    }
+
+    .condition
+    {
+        left: -170%;
+        top: 60%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 25%;
+        top: -25%;
+    }
+
+    
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 8px;
+        margin-left: -1%;
+        margin-top: 32px;
+    }
+}
+
+/* #endregion */
+
+/* #region Phone Size */
+@media screen and (max-width: 600px) {
+    .content {max-width:100%;}
+
+    nav{
+        display: none;
+      }
+
+    .topnav{
+        padding: 64px; 
+        border-radius: 42px;
+        margin-top: -16px;
+    }
+    .topnav a.icon{ 
+        right: 8%; 
+        top: 2.5%; 
+        border-radius: 28px; 
+        width: 100px;
+    }
+
+    .topnav #myLinks { height: 348px;}
+
+    .topnav a{
+        position:relative;
+        text-align: center;
+        width: 100px;
+        padding: 16px;
+        margin-top: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        right: -65%; top: 12%;
+    }
+
+    
+
+    .banner{ padding: 48px;}
+
+    .banner-button {
+        margin-left: 0%; 
+        margin-top: 0%;}
+
+    .title {
+        font-size: 0rem;
+        text-align: justify;
+        opacity: 0;
+    }
+    .logo{
+        width: 80px;
+        height: auto;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .grid {
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(6, 1fr);
+      }
+
+    .hero{ grid-column: 1/3; grid-row: 1/2;}
+    .weather{ grid-column: 1/3; grid-row: 2/3;}
+    .news{ grid-column: 1/3; grid-row: 3/4;}
+    .events{ grid-column: 1/3; grid-row: 4/5;}
+    .comp1{ grid-column:  1/3; grid-row: 5/6;}
+    .comp2{ grid-column: 1/3; grid-row: 6/7;}
+
+
+    .news, .events, .comp1, .comp2, .hero, .weather{
+
+        display: flex;
+        font-family: var(--font);
+        padding: 12px -12px; 
+        color: white;
+        max-width: 100%;
+        max-height: 400px;
+        font-size: 1.1rem;
+        background-color: var(--primary-color);
+        align-content: justify;
+        box-shadow: 0 0 64px #333;
+        border-radius: 48px;
+        
+    }
+
+    .hero
+    {
+        background-image: url("../images/gamedev-img.jpg");
+        background-size:cover;
+        background-position: center;
+        opacity: 75%;;
+    }
+
+    .hero-img
+    {
+        display: none;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        padding: 6px;
+        margin-left: -3%;
+        margin-top: 32px;
+    }
+    footer div{
+        display: block;
+        color: #fff;
+        font-family: var(--font);
+        text-align: center;
+        margin: 6px ;
+        font-size: 0.75rem;
+    }
+
+    .hero-button{
+        position: relative;
+        display: inline-block;
+        transform: translate(16%, 396%);
+    }
+
+    
+    .windchill, .currentWSpeed, .condition
+    {
+
+        font-size:medium;
+        padding: 0px;
+
+    }
+
+    .windIndication
+    {
+        position: relative;
+        align-content: justify;
+        left: -70%;
+        top: 55%;
+    }
+
+    .condition
+    {
+        left: -70%;
+        top: 45%;
+    }
+
+    .currentTemp
+    {
+        position: relative;
+        align-content: justify;
+        left: 80%;
+        top: -45%;
+    }
+
+    .weatherImg
+    {
+        width: 200px;
+        height: 200px;
+    }
+    .text-inner
+    {
+        display: block;
+        padding: 24px;
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+
+/* #endregion */
+

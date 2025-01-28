@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <header>
+
+
+        <img class="logo" src="./images/Chamber of Commerce Logo.webp">
+        <div class="title">
+            <p>Citizens Chamber of Commerce</p>
+            <p class="date">Date is Here</p>
+        </div>
+
+        <nav>
+            <a href="">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="about.html">Discover</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+
+        <div class="topnav">
+
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="about.html">Discover</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <h3 class="explore-btn">Explore</h3>
+            </a>
+        </div>
+            <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
+                <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
+            </div>
+    </header>
+    
+    <body>
+        <grid class="grid">
+            <div class="news">
+                <p class="text-inner">
+                    Gamers around the world are buzzing about the highly 
+                    anticipated release of "Galactic Odyssey," the latest 
+                    video game from indie developer SpacePlay."Galactic Odyssey" 
+                    promises to be a hit with both casual and hardcore gamers alike. 
+                    
+                </p>
+            </div>
+            <div class="events">
+                <p class="text-inner">
+                    Indie game developers gather at the annual Indie Game Dev Mini Conference 
+                    on Wednesdays to share tips and tricks on creating successful games.
+                    Talks from industry experts on everything from game design and programming 
+                    to marketing and distribution as well as refreshments are available to all participants.
+                </p>
+            </div>
+
+            <div class="hero">
+                
+                <div>
+                    <img class="hero-img" src="./images/gamedev-img.jpg">
+                    
+                </div>
+                
+                <div>
+                    <a class="hero-button" href="#"><h3>Join!</h3></a>
+                </div>
+                <!-- <p class="text-inner">
+                    Hero. This is some test text
+                </p> -->
+                
+              
+            </div>
+
+            <div class="weather">
+                
+                <div>
+                    <img id="weather-icon" class="weatherImg" width="275px" height="275px">
+                    <h1 id="temp" class="currentTemp"> </h1>
+                </div>
+                
+                <div>
+                    <span id="condition" class="condition"></span>
+                    <div class="windIndication">
+                        <span id="windspeed" class="currentWSpeed"> current windspeed </span>
+                        <span id="windchill" class="windchill"> current windchill </span>
+                    </div>
+                  
+                </div>
+                
+            </div>
+            
+            <section class="comp1" id="comp1"></section>
+
+            <section class="comp2" id="comp2"></section>
+        </grid>
+    </body>
+
+    <footer>
+        <div id="year"></div>
+        <div>Will Marda</div>
+        <div>WDD 230 Project</div>
+        <div id="updated"></div>
+        <div> <a class="chamber-link" href="https://www.google.com/maps/d/viewer?mid=1YsDq-eyXImLdb-fRihMJHGTzI3c&hl=en_US&ll=40.777308000000026%2C-111.888177&z=17">Utah State Capitol, Salt Lake City, Ut, 84103</a></div>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/weather-api.js"></script>
+    <script src="scripts/random_directory.js"></script>
+</html>

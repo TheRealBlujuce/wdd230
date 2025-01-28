@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 800px;
+    }
+
+    .list li {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+}

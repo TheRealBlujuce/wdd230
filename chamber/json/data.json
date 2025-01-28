@@ -1,0 +1,59 @@
+{
+    "companies": [
+      {
+        "name": "Pixel Playground",
+        "address": "1234 Main St, Suite 100, Anytown, USA",
+        "phone": "+1 (555) 123-4567",
+        "member": "gold"
+      },
+      {
+        "name": "Arcade Avenue",
+        "address": "5678 Second St, Suite 200, Anytown, USA",
+        "phone": "+1 (555) 987-6543",
+        "member": "gold"
+      },
+      {
+        "name": "Game Galaxy",
+        "address": "2468 Third St, Suite 300, Anytown, USA",
+        "phone": "+1 (555) 555-1212",
+        "member": "gold"
+      },
+      {
+        "name": "Virtual Ventures",
+        "address": "1357 Fourth St, Suite 400, Anytown, USA",
+        "phone": "+1 (555) 867-5309",
+        "member": "gold"
+      },
+      {
+        "name": "Digital Dreamland",
+        "address": "3690 Fifth St, Suite 500, Anytown, USA",
+        "phone": "+1 (555) 555-5555",
+        "member": "gold"
+      },
+      {
+        "name": "Pixelated Playtime",
+        "address": "2468 Sixth St, Suite 600, Anytown, USA",
+        "phone": "+1 (555) 222-3333",
+        "member": "gold"
+      },
+      {
+        "name": "Gaming Galaxy",
+        "address": "1357 Seventh St, Suite 700, Anytown, USA",
+        "phone": "+1 (555) 444-5555",
+        "member": "gold"
+      },
+      {
+        "name": "Tech Toybox",
+        "address": "3690 Eighth St, Suite 800, Anytown, USA",
+        "phone": "+1 (555) 123-7890",
+        "member": "gold"
+      },
+      {
+        "name": "Virtual World",
+        "address": "2468 Ninth St, Suite 900, Anytown, USA",
+        "phone": "+1 (555) 555-1212",
+        "member": "gold"
+      }
+    ]
+  }
+  
