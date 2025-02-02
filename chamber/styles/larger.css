@@ -1,0 +1,216 @@
+/* larger.css */
+
+/* Root variables */
+:root {
+    --primary-color: #9b5262;
+    --secondary-color: #713E5A;
+    --tertiary-color: #736659;
+    --accent1-color: #f7dbbc;
+    --accent2-color: #CA6680;
+
+    --font: "Noto Sans JP";
+  
+    --font-color: #736659;
+    --paragraph-background-color: #D57A66;
+    --nav-link-color: #736659;
+    --nav-background-color: #9b5262;
+    --nav-hover-link-color: #f7dbbc;
+    --nav-hover-background-color: #CA6680;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 76px;
+    padding-right: 12px;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    right: 64px;
+    top: 6px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: var(--nav-background-color);
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 0 64px #333;
+    margin: 12px auto;
+    border-radius: 48px;
+    max-width: 800px;
+    padding: 12px;
+}
+
+nav a {
+    transition-duration: 0.25s;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 32px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* Mobile Navigation (Burger Bar) */
+.topnav {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-background-color);
+    text-align: justify;
+    align-content: center;
+    box-shadow: 0 0 64px #333;
+    margin: 12px auto;
+    padding: 12px;
+    padding-top: 16px;
+    border-radius: 48px;
+    transition-duration: 0.75s;
+}
+
+.topnav #myLinks {
+    display: none;
+    border-radius: 12px;
+}
+
+.topnav a {
+    transition-duration: 0.5s;
+    display: block;
+    color: #fff;
+    padding: 20px;
+    margin: 8px 64px;
+    font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 24px;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-background-color);
+    text-align: justify;
+    align-content: center;
+    box-shadow: 0 0 64px #333;
+    margin: 28px auto;
+    margin-top: 48px;
+    padding: 25px;
+    padding-left: 80px;
+    border-radius: 48px;
+    max-width: 1632px;
+    color: white;
+    font-family: var(--font);
+}
+
+/* Buttons */
+.banner-button, .hero-button {
+    transition-duration: 0.75s;
+    display: inline-block;
+    background-color: var(--paragraph-background-color);
+    color: #fff;
+    text-align: center;
+    padding: 8px 75px;
+    max-width: 216px;
+    font-size: 0.9rem;
+    font-family: var(--font);
+    border-radius: 32px;
+}
+
+.banner-button:hover, .hero-button:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 48px 8px;
+    grid-gap: 12px;
+}
+
+.news, .events, .comp1, .comp2, .weather, .hero {
+    display: flex;
+    font-family: var(--font);
+    padding: 12px;
+    color: white;
+    max-width: 800px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 64px #333;
+    border-radius: 48px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    margin-left: 10%;
+}
+
+footer div {
+    color: #fff;
+    font-family: var(--font);
+    text-align: center;
+    margin: 20px 32px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 1280px) {
+    nav {
+        flex-direction: row;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .topnav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+    .content { max-width: 960px; }
+
+    nav { display: none; }
+    
+    .topnav {
+        display: block;
+        padding: 64px;
+        border-radius: 42px;
+        margin-top: -110px;
+    }
+
+    .topnav a {
+        text-align: center;
+        max-width: 200px;
+        padding: 16px;
+        margin-top: 16px;
+    }
+
+    .banner {
+        padding: 48px;
+    }
+
+    .grid {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .news, .events, .comp1, .comp2, .weather, .hero {
+        height: 600px;
+        max-width: 100%;
+    }
+}

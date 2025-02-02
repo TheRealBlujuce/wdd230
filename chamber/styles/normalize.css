@@ -1,0 +1,44 @@
+/* normalize.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure all elements inherit box-sizing */
+html {
+    font-size: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove underlines from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset images to fit container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Basic body styling */
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
