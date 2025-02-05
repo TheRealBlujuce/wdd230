@@ -43,7 +43,7 @@
         align-content: center;
         box-shadow: 0 0 64px #333;
         margin: 12px auto;
-        border-radius: 48px;
+        border-radius: 12px;
         max-width: 800px;
         padding: 12px;
     }
@@ -64,7 +64,7 @@
         text-decoration: none;
         font-size: 0.9rem;
         font-family: var(--font);
-        border-radius: 32px;
+        border-radius: 12px;
     }
 
     nav a:hover {
@@ -90,8 +90,8 @@
         margin: 12px auto;
         padding: 12px;
         padding-top: 16px;
-        border-radius: 48px;
-        max-width: auto;
+        border-radius: 12px;
+        max-width: 100%;
         transition-duration: 0.75s;
     }
 
@@ -116,7 +116,7 @@
         text-decoration: none;
         font-size: 0.9rem;
         font-family: var(--font);
-        border-radius: 24px;
+        border-radius: 12px;
     }
 
     /* Style the hamburger menu */
@@ -129,7 +129,7 @@
         top: 3%;
         width: 296px;
         height: 32px;
-        border-radius: 32px;
+        border-radius: 12px;
     }
 
     /* Add a grey background color on mouse-over */
@@ -163,7 +163,7 @@
     margin-top: 48px;
     padding: 25px;
     padding-left: 80px;
-    border-radius: 48px;
+    border-radius: 12px;
     max-width: 1632px;
     height: auto;
     flex: 1 1 auto;
@@ -183,13 +183,13 @@
     padding-left: 75px;
     padding-right: 75px;
     max-width: 216px;
-    max-height: auto;
+    max-height: 100%;
 
  
 	text-decoration: none;
 	font-size: 0.9rem;
     font-family: var(--font);
-    border-radius: 32px;
+    border-radius: 12px;
 }
 
 .banner-button:hover {
@@ -227,14 +227,13 @@ body{
 .news, .events, .comp1, .comp2, .weather, .hero{
     display: flex;
     font-family: var(--font);
-    padding: 12px -12px;
+    padding: 12px 12px; /* Replaced -12px with 12px */
     color: white;
     max-width: 800px;
     font-size: 1.1rem;
     background-color: var(--primary-color);
-    align-content: justify;
 	box-shadow: 0 0 64px #333;
-    border-radius: 48px;
+    border-radius: 12px;
 }
 
 
@@ -285,7 +284,7 @@ body{
   }
 
 footer{
-    display: flex;
+    position: relative; /* Replaced display: relative with position: relative */
     flex-direction: row;
     padding: 24px;
     margin-left: 10%;
@@ -323,7 +322,7 @@ footer div{
     text-decoration: none;
     font-size: 0.9rem;
     font-family: var(--font);
-    border-radius: 32px;
+    border-radius: 12px;
   }
 
 .hero-button:hover {
@@ -343,7 +342,7 @@ footer div{
     display: block;
     max-width: 800px;
     max-height: 600px;
-    border-radius: 48px;
+    border-radius: 12px;
     opacity: 75%;
 }
 
@@ -351,7 +350,7 @@ footer div{
 .windchill, .condition, .currentWSpeed
 {
     position: relative;
-    align-content: justify;
+    justify-content: center; /* Replaced justify with justify-content */
     left: 0%;
     top: 40%;
     font-size: large;
@@ -362,7 +361,7 @@ footer div{
 .windIndication
 {
     position: relative;
-    align-content: justify;
+    justify-content: center; /* Replaced justify with justify-content */
     left: -5%;
     top: 45%;
 }
@@ -370,7 +369,7 @@ footer div{
 .currentTemp
 {
     position: relative;
-    align-content: justify;
+    justify-content: center; /* Replaced justify with justify-content */
     left: 90%;
     top: -40%;
 }
@@ -418,13 +417,13 @@ footer div{
       .topnav{
         display: block;
         padding: 64px; 
-        border-radius: 42px;
+        border-radius: 12px;
         margin-top: -110px;
     }
     .topnav a.icon{ 
         right: 4%; 
         top: 2.5%; 
-        border-radius: 28px; 
+        border-radius: 12px; 
         max-width: 200px;
         /* width: 100%; */
     }
@@ -473,7 +472,7 @@ footer div{
         background-color: var(--primary-color);
         align-content: justify;
         box-shadow: 0 0 64px #333;
-        border-radius: 48px;
+        border-radius: 12px;
     }
 
     
@@ -572,13 +571,13 @@ footer div{
     .topnav{
         display: block;
         padding: 64px; 
-        border-radius: 42px;
+        border-radius: 12px;
         margin-top: -110px;
     }
     .topnav a.icon{ 
         right: 4%; 
         top: 2.5%; 
-        border-radius: 28px; 
+        border-radius: 12px; 
         max-width: 200px;
         width: 100%;
     }
@@ -620,7 +619,7 @@ footer div{
         background-color: var(--primary-color);
         align-content: justify;
         box-shadow: 0 0 64px #333;
-        border-radius: 48px;
+        border-radius: 12px;
     }
 
     .hero-img{
@@ -703,13 +702,13 @@ footer div{
 
     .topnav{
         padding: 64px; 
-        border-radius: 42px;
+        border-radius: 12px;
         margin-top: -16px;
     }
     .topnav a.icon{ 
         right: 8%; 
         top: 2.5%; 
-        border-radius: 28px; 
+        border-radius: 12px; 
         width: 100px;
     }
 
@@ -772,7 +771,7 @@ footer div{
         background-color: var(--primary-color);
         align-content: justify;
         box-shadow: 0 0 64px #333;
-        border-radius: 48px;
+        border-radius: 12px;
         
     }
 

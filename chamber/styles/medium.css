@@ -1,0 +1,23 @@
+/* medium.css */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

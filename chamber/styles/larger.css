@@ -1,0 +1,24 @@
+/* larger.css */
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
