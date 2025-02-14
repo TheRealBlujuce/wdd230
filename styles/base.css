@@ -62,7 +62,7 @@ body {
 /* Hamburger Menu Styles */
 .hamburger-menu {
     display: none; /* Hidden by default */
-    background-color: #d1d1f0; /* Slightly darker for contrast */
+    background-color: #a6a6c7; /* Slightly darker for contrast */
     border: none;
     font-size: 24px;
     padding: 10px 20px;
@@ -93,14 +93,51 @@ body {
     border: 0;
 }
 
+.hero {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block; /* Show the hamburger menu in mobile view */
     }
 
-    .list {
+    .navigation {
         display: none; /* Hide the menu items initially */
+        flex-direction: column;
+        align-items: center;
+        background-color: #8b8bb3; /* Updated for better contrast */
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navigation.show {
+        display: flex; /* Show the menu items when toggled */
+    }
+
+    .list {
+        display: flex; /* Show the menu items in larger views */
         flex-direction: column;
         align-items: center;
         background-color: #d1d1f0; /* Updated for better contrast */
@@ -108,14 +145,10 @@ body {
         border-radius: 10px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-
-    .list.show {
-        display: flex; /* Show the menu items when toggled */
-    }
 }
 
 @media (min-width: 769px) {
-    .list {
+    .navigation {
         display: flex; /* Show the menu items in larger views */
         flex-direction: row;
         justify-content: space-around;

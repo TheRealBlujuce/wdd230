@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");
-    const menuList = document.querySelector(".list");
+    const menuList = document.querySelector(".navigation");
 
     menuToggle.addEventListener("click", () => {
         const isMenuOpen = menuList.style.display === "block";

@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-<head>
+<header>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/portal-styles.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta property="og:title" content="WDD 230 Assignment Portal">
     <meta property="og:description" content="A portal for Will's WDD 230 assignments and resources.">
@@ -12,57 +12,85 @@
     <meta property="og:url" content="https://therealblujuce.github.io/wdd230">
     <meta property="og:type" content="website">
 
-    <title>WDD 230 Assignment Portal</title>
-</head>
+    <title>WDD 230 Assignment Portal Willem Marda - WDD 230 - Web Frontend Development</title>
+</header>
 
-<body>
-    <!-- Header -->
-    <div class="portal-header">
-        <h1 class="name">Will Marda</h1>
-        <h3 class="portal-title">WDD 230: Assignment Portal</h3>
-        <nav class="navigation">
-            <div><a href="index.html">Home</a></div>
-            <div><a href="Lesson3/chamber-site-plan.html">Site Plan</a></div>
-            <div><a href="chamber/">Chamber</a></div>
-            <div><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng">Scripture</a></div>
-        </nav>
-    </div>
+    <body>
+        <!-- Header -->
+        <div class="portal-header">
+            <h1 class="name">Will Marda</h1>
+            <h3 class="portal-title">WDD 230 Assignment Portal</h3>
+            <button id="menu-toggle" class="hamburger-menu">≡</button>
+            <nav class="navigation">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="Lesson3/chamber-site-plan.html">Site Plan</a></div>
+                <div><a href="chamber/">Chamber</a></div>
+                <div><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng">Scripture</a></div>
+            </nav>
+        </div>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <button id="menu-toggle" class="hamburger-menu">≡</button>
-        <ul class="list">
-            <li>Lesson 1 <a href="">Title</a></li>
-            <li>Lesson 2 <a href="lesson02/design-principles.html">Design Document</a></li>
-            <li>Lesson 3 <a href="lesson03/chamber-site-plan.html">Chamber of Commerce Site Planning</a></li>
-            <li>Lesson 4 <a href="chamber/index.html">Chamber of Commerce</a></li>
-            <li>Lesson 5 <a href="lesson05/bom.html">Book Of Mormon Favorites</a></li>
-            <li>Lesson 6 <a href="">Title</a></li>
-            <li>Lesson 7 <a href="lesson07/lazyload.html">Lazy Loading</a></li>
-            <li>Lesson 8 <a href="">Title</a></li>
-            <li>Lesson 9 <a href="lesson09/prophets.html">Prophets</a></li>
-            <li>Lesson 10 <a href="lesson10/weather-api.html">Weather</a></li>
-            <li>Lesson 11 <a href="">Title</a></li>
-        </ul>
-    </nav>
+        <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/portal-styles.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <meta property="og:title" content="WDD 230 Assignment Portal">
+        <meta property="og:description" content="A portal for Will's WDD 230 assignments and resources.">
+        <meta property="og:image" content="images/social-preview.webp">
+        <meta property="og:url" content="https://therealblujuce.github.io/wdd230">
+        <meta property="og:type" content="website">
+        <title>WDD 230 Assignment Portal</title>
+    </head>
 
-    <!-- Embedded Google Map -->
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509373!2d144.96305771531584!3d-37.8142179797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778e8d2e5d0f8a!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1673848500000!5m2!1sen!2sau"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <!-- Hero Section -->
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/wdc-temple-960.jpeg" media="(min-width: 600px)">
+                    <source srcset="images/wdc-temple-400.jpg" media="(max-width: 599px)">
+                    <img src="images/wdc-temple-960.jpeg" alt="Washington D.C. Temple" width="960" height="540">
+                </picture>
+                <div class="overlay">Washington D.C. Temple</div>
+            </div>
+        </main>
+
+        <!-- Navigation Menu -->
+        <section>
+            <ul class="list">
+                <li>Lesson 1 <a href="">Title</a></li>
+                <li>Lesson 2 <a href="lesson02/design-principles.html">Design Document</a></li>
+                <li>Lesson 3 <a href="lesson03/chamber-site-plan.html">Chamber of Commerce Site Planning</a></li>
+                <li>Lesson 4 <a href="chamber/index.html">Chamber of Commerce</a></li>
+                <li>Lesson 5 <a href="lesson05/bom.html">Book Of Mormon Favorites</a></li>
+                <li>Lesson 6 <a href="">Title</a></li>
+                <li>Lesson 7 <a href="lesson07/lazyload.html">Lazy Loading</a></li>
+                <li>Lesson 8 <a href="">Title</a></li>
+                <li>Lesson 9 <a href="lesson09/prophets.html">Prophets</a></li>
+                <li>Lesson 10 <a href="lesson10/weather-api.html">Weather</a></li>
+                <li>Lesson 11 <a href="">Title</a></li>
+            </ul>
+        </section>
+
+        <!-- Embedded Google Map -->
+        <section class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509373!2d144.96305771531584!3d-37.8142179797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778e8d2e5d0f8a!2sMelbourne%20CBD!5e0!3m2!1sen!2sau!4v1673848500000!5m2!1sen!2sau"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
 
         <!-- Footer -->
-        <div class="portal-footer">
+        <footer class="portal-footer">
             <h3 class="copyright">© Will Marda 2025</h3>
             <h4 id="updated" class="last-updated"></h4>
             <img src="images/facebook-favicon.webp" alt="Facebook Icon" width="32" height="32">
 
-        </div>
-    
+        </footer>
+
         <script src="scripts/menu.js" defer></script>
         <script src="scripts/getdates.js" defer></script>
-</body>
+    </body>
 
 </html>
