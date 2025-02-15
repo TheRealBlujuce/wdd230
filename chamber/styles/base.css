@@ -50,7 +50,7 @@
     nav {
         position: absolute;
         right: 144px;
-        top: 6px;
+        top: 150px;
         display: inline-flex;
         flex-direction: column;
         background-color: var(--nav-background-color);
@@ -164,6 +164,7 @@
     .explore-btn{
         text-align: center;
         margin-top: 3px;
+
     }
 
 /* #endregion */
@@ -176,7 +177,7 @@
     align-content: center;
 	box-shadow: 0 0 64px #333;
 	margin: 28px auto;
-    margin-top: 48px;
+    margin-top: 10%;
     padding: 25px;
     padding-left: 80px;
     border-radius: 12px;
@@ -216,14 +217,14 @@
 
 
 .title{
-    display: block;
+    display:block;
     text-align: justify;
-    font-size: 1.1rem;
-    margin-top: -86px;
-    margin-left: 96px;
+    font-size: 0.75em;
     font-family: var(--font);
     color: white;
-    max-width: 264px;
+    width: auto;
+    margin-left: 5%;
+    margin-top: -5%;
 }
 
 body{
@@ -550,7 +551,7 @@ footer div {
         display: block;
         padding: 64px; 
         border-radius: 12px;
-        margin-top: -110px;
+        margin-top: -100px;
     }
     .topnav a.icon{ 
         right: 4%; 
@@ -646,12 +647,8 @@ footer div {
     .comp1{grid-column: 1/3; grid-row: 5/6;}
     .comp2{ grid-column: 1/3; grid-row: 6/7;}
 
-
-
     .title {
-        font-size: 1rem;
-        text-align: justify;
-        margin-left: 20%;
+        display: none;
     }
     .logo{
         width: 80px;
@@ -791,6 +788,7 @@ footer div {
         font-size: 1rem;
         text-align: justify;
         margin-left: 12%;
+        margin-top: -12%;
     }
     .logo{
         width: 80px;
@@ -862,7 +860,7 @@ footer div {
     .topnav{
         padding: 64px; 
         border-radius: 12px;
-        margin-top: -16px;
+        margin-top: -80px;
     }
     .topnav a.icon{ 
         right: 8%; 
