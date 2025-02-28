@@ -51,7 +51,7 @@
                 <h2>Form Submitted Successfully!</h2>
                 <p>Thank you for submitting the form. Your information has been received.</p>
             </section>
-            
+
         </main>
 
         <footer>
@@ -76,6 +76,13 @@
                     document.getElementById("password").focus();
                 }
             });
+
+            // Show confirmation message if redirected from the form
+            window.onload = function () {
+                if (window.location.href.includes("record.html")) {
+                    document.getElementById("confirmation-message").classList.remove("hidden");
+                }
+            };
         </script>
     </body>
 </html>
