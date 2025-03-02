@@ -766,7 +766,7 @@ footer div {
     .news, .events, .comp1, .comp2, .weather, .hero{
         display: flex;
         font-family: var(--font);
-        padding: 12px -12px;
+        padding: 12px 12px;
         color: white;
         max-width: 400px;
         font-size: 1.1rem;
