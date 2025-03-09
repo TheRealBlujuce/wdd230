@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const darkModeToggle = document.getElementsByClassName("dark-mode-toggle");
     const body = document.body;
 
     // Check local storage for saved preference
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // hamburger darkmodde button
 document.addEventListener("DOMContentLoaded", () => {
     const myLinks = document.getElementById("myLinks");
-    const darkModeToggle = myLinks.querySelector("#dark-mode-toggle"); // Get dark-mode-toggle from myLinks
+    const darkModeToggle = myLinks.querySelector(".dark-mode-toggle"); // Get dark-mode-toggle from myLinks
     const body = document.body;
 
     // Check local storage for saved preference
