@@ -16,55 +16,59 @@
         <meta name="author" content="Your Name">
     </head>
 
-    <header>
-        <img class="logo" src="./images/chamberofcommerce.webp">
-        <div class="title">
-            <h1>Chamberlin Chamber of Commerce</h1>
-            <p class="date">Date is Here</p>
-        </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
-            <a href="contact.html">Contact Us</a>
-            <a id="dark-mode-toggle">🌙 Dark Mode</a>
-        </nav>
-
-        <div class="topnav">
-
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-                <a href="">Home</a>
-                <a href="directory.html">Directory</a>
+    <body>
+        
+        <header>
+            <img class="logo" src="./images/chamberofcommerce.webp" alt="chamber logo">
+            <div class="title">
+                <h1>Chamberlin Chamber of Commerce</h1>
+                <p class="date">Date is Here</p>
+            </div>
+    
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="">Directory</a>
                 <a href="join.html">Join</a>
                 <a href="discover.html">Discover</a>
                 <a href="contact.html">Contact Us</a>
                 <a id="dark-mode-toggle">🌙 Dark Mode</a>
+            </nav>
+    
+            <div class="topnav">
+    
+                <!-- Navigation links (hidden by default) -->
+                <div id="myLinks">
+                    <a href="">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="join.html">Join</a>
+                    <a href="discover.html">Discover</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a id="dark-mode-toggle">🌙 Dark Mode</a>
+                </div>
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <h3 class="explore-btn">Explore</h3>
+    
+                </a>
+                
             </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <h3 class="explore-btn">Explore</h3>
+    
+            <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
+                <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
+            </div>
+        </header>
 
-            </a>
-            
-        </div>
-
-        <div id="banner" class="banner"><h2>Come join us Wednesday nights at 7pm MST for our local Indie-Game Dev Panel!</h2>
-            <a class="banner-button" href="#"><h3>Sign Up Now</h3></a>
-        </div>
-    </header>
-    <body>
         <div class="cards"></div>
+
+        <footer class="footer">
+            <div id="year"></div>
+            <div>Will Marda</div>
+            <div>WDD 230 Project</div>
+            <div id="updated"></div>
+            <div> <a class="chamber-link" href="https://www.google.com/maps/d/viewer?mid=1YsDq-eyXImLdb-fRihMJHGTzI3c&hl=en_US&ll=40.777308000000026%2C-111.888177&z=17">Utah State Capitol, Salt Lake City, Ut, 84103</a></div>
+        </footer>
     </body>
-    <footer class="footer">
-        <div id="year"></div>
-        <div>Will Marda</div>
-        <div>WDD 230 Project</div>
-        <div id="updated"></div>
-        <div> <a class="chamber-link" href="https://www.google.com/maps/d/viewer?mid=1YsDq-eyXImLdb-fRihMJHGTzI3c&hl=en_US&ll=40.777308000000026%2C-111.888177&z=17">Utah State Capitol, Salt Lake City, Ut, 84103</a></div>
-    </footer>
+
 
     <script src="scripts/chamber.js"></script>
     <script src="scripts/directory.js"></script>
