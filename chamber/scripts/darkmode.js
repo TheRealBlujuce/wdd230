@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const darkModeToggle = document.getElementsByClassName("dark-mode-toggle");
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
     const body = document.body;
 
     // Check local storage for saved preference
