@@ -50,8 +50,8 @@
 /* #region Nav Bar*/
     nav {
         position: absolute;
-        right: 144px;
-        top: 50px;
+        right: 50px;
+        top: 35px;
         display: inline-flex;
         flex-direction: column;
         background-color: var(--nav-background-color);
