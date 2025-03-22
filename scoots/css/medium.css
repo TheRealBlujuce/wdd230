@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    nav {
+        justify-content: space-evenly;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
