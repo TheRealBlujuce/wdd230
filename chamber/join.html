@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="stylesheet" href="styles/join.css">
         <meta property="og:title" content="Chamberlin Chamber Of Commerce - Join">
@@ -19,21 +20,25 @@
     <body>
 
         <header>
-            <img class="logo" src="./images/chamberofcommerce.webp" alt="Chamber of Commerce Logo">
 
-            <div class="title">
-                <h1>Chamberlin Chamber of Commerce</h1>
-                <p class="date">Date is Here</p>
+            <div class="top">
+
+                <img class="logo" src="./images/chamberofcommerce.webp" alt="chamber logo">
+                <div class="title">
+                    <h1>Chamberlin Chamber of Commerce</h1>
+                    <p class="date">Date is Here</p>
+                </div>
+            
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="">Join</a>
+                    <a href="discover.html">Discover</a>
+                    <!-- <a href="contact.html">Contact Us</a> -->
+                    <a id="dark-mode-toggle">🌙 Dark Mode</a>
+                </nav>
+    
             </div>
-
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="directory.html">Directory</a>
-                <a href="">Join</a>
-                <a href="discover.html">Discover</a>
-                <a href="contact.html">Contact Us</a>
-                <a id="dark-mode-toggle">🌙 Dark Mode</a>
-            </nav>
 
 
             <div class="topnav">
@@ -44,7 +49,7 @@
                     <a href="directory.html">Directory</a>
                     <a href="">Join</a>
                     <a href="discover.html">Discover</a>
-                    <a href="contact.html">Contact Us</a>
+                    <!-- <a href="contact.html">Contact Us</a> -->
                     <a id="dark-mode-toggle">🌙 Dark Mode</a>
                 </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
@@ -200,6 +205,7 @@
                 
             <script src="scripts/chamber.js"></script>
             <script src="scripts/join.js"></script>
+            <script src="scripts/darkmode.js"></script>
     </body>
 
 </html>

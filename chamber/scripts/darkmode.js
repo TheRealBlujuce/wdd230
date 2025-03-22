@@ -1,50 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const darkModeToggles = document.querySelectorAll("#dark-mode-toggle, #dark-mode-toggle-hm");
     const body = document.body;
+
+    // Function to update dark mode state
+    function updateDarkMode(state) {
+        if (state === "enabled") {
+            body.classList.add("dark-mode");
+            darkModeToggles.forEach(toggle => toggle.textContent = "☀️ Light Mode");
+            localStorage.setItem("dark-mode", "enabled");
+        } else {
+            body.classList.remove("dark-mode");
+            darkModeToggles.forEach(toggle => toggle.textContent = "🌙 Dark Mode");
+            localStorage.setItem("dark-mode", "disabled");
+        }
+    }
 
     // Check local storage for saved preference
     if (localStorage.getItem("dark-mode") === "enabled") {
-        body.classList.add("dark-mode");
-        darkModeToggle.textContent = "☀️ Light Mode";
+        updateDarkMode("enabled");
     }
 
-    darkModeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-
-        // Save user preference
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("dark-mode", "enabled");
-            darkModeToggle.textContent = "☀️ Light Mode";
-        } else {
-            localStorage.setItem("dark-mode", "disabled");
-            darkModeToggle.textContent = "🌙 Dark Mode";
-        }
+    // Add event listeners to both toggles
+    darkModeToggles.forEach(toggle => {
+        toggle.addEventListener("click", () => {
+            if (body.classList.contains("dark-mode")) {
+                updateDarkMode("disabled");
+            } else {
+                updateDarkMode("enabled");
+            }
+        });
     });
 });
-
-// hamburger darkmodde button
-document.addEventListener("DOMContentLoaded", () => {
-    const myLinks = document.getElementById("myLinks");
-    const darkModeToggle = myLinks.querySelector(".dark-mode-toggle"); // Get dark-mode-toggle from myLinks
-    const body = document.body;
-
-    // Check local storage for saved preference
-    if (localStorage.getItem("dark-mode") === "enabled") {
-        body.classList.add("dark-mode");
-        darkModeToggle.textContent = "☀️ Light Mode";
-    }
-
-    darkModeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-
-        // Save user preference
-        if (body.classList.contains("dark-mode")) {
-            localStorage.setItem("dark-mode", "enabled");
-            darkModeToggle.textContent = "☀️ Light Mode";
-        } else {
-            localStorage.setItem("dark-mode", "disabled");
-            darkModeToggle.textContent = "🌙 Dark Mode";
-        }
-    });
-});
-

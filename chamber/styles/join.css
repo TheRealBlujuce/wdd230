@@ -60,6 +60,12 @@ input[type=submit]{
     transition-duration: 0.75s;
 }
 
+.dark-mode input[type=submit]
+{
+    background-color: var(--dark-paragraph-background-color);
+    color: #ddd;
+}
+
 
 /* Style the container */
 .container {
@@ -72,6 +78,10 @@ input[type=submit]{
     margin-left: 20%;
     margin-right: 20%;
     box-shadow: 0 0 64px #333;
+}
+
+.dark-mode .container{
+    background-color: var(--dark-nav-background-color);
 }
 
 .mFee

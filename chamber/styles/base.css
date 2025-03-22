@@ -47,22 +47,30 @@
     padding-right: 12px;
 }
 
+.top{
+    background-color: var(--nav-background-color);
+    height: 10rem;
+    position: absolute;
+    top: 8px;
+    width: 98%;
+    padding: 12px;
+}
+
 /* #region Nav Bar*/
     nav {
         position: absolute;
         right: 50px;
-        top: 35px;
+        top: 25px;
         display: inline-flex;
         flex-direction: column;
-        background-color: var(--nav-background-color);
         text-align: center;
         align-content: center;
-        box-shadow: 0 0 64px #333;
         margin: 12px auto;
         border-radius: 12px;
         max-width: 1000px;
         padding: 12px;
     }
+
     nav div {
         flex: 1 1 auto;
     }
@@ -98,24 +106,24 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        
-        background-color: var(--nav-background-color);
+        background: var(--nav-background-color);
         text-align: justify;
         align-content: center;
-        box-shadow: 0 0 64px #333;
         margin: 12px auto;
         padding: 12px;
         padding-top: 16px;
         border-radius: 12px;
         max-width: 100%;
-        transition-duration: 0.75s;
+        /* transition-duration: 0.75s; */
     }
 
   /* Hide the links inside the navigation menu (except for logo/home) */
     .topnav #myLinks {
-    display: none;
-    transition-duration: 0.75s;
-    border-radius: 12px;
+        display: none;
+        margin-top: 72px;
+        margin-left: 35px;
+        transition-duration: 0.75s;
+        border-radius: 12px;
     }
 
     /* Style navigation menu links */
@@ -125,7 +133,7 @@
         color: #fff;
         text-align: justify;
         padding: 20px;
-        margin-top: 8px;
+        margin-top: 200px;
         margin-left: 64px;
         margin-right: 64px;
         width: auto;
@@ -148,6 +156,11 @@
         border-radius: 12px;
     }
 
+    .dark-mode .topnav a.icon
+    {
+        background-color: var(--dark-paragraph-background-color);
+    }
+
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
         transition-duration: 0.25s;
@@ -167,6 +180,8 @@
         margin-top: 3px;
 
     }
+
+
 
 /* #endregion */
 
@@ -405,10 +420,11 @@ footer div {
     color: #ffffff;
 }
 
-.dark-mode nav {
+.dark-mode .top {
     background-color: var(--dark-nav-background-color);
-    box-shadow: 0 0 64px #000;
 }
+
+
 
 .dark-mode nav a {
     color: #ddd;
@@ -560,7 +576,7 @@ footer div {
         width: 100%;
     }
 
-    .topnav #myLinks { height: 400px;}
+    .topnav #myLinks { height: 400px; margin-top: 116px; margin-left: 0px; margin-right: 16px;}
 
     .topnav a{
         position:relative;
@@ -723,7 +739,7 @@ footer div {
         width: 100%;
     }
 
-    .topnav #myLinks { height: 400px;}
+    .topnav #myLinks { height: 400px; margin-top: 132px; margin-left: 0px; margin-right: 10px;}
 
     .topnav a{
         position:relative;
@@ -1051,7 +1067,6 @@ footer div {
 
 .innerText
 {
-    
     /* visibility: hidden; */
     opacity: 0%;
     position: absolute;
@@ -1078,7 +1093,7 @@ footer div {
 
 .tile3 img, .tile4 img, .tile5 img, .tile6 img
 {
-    width: 900px;
+    width: 1000px;
 }
 
 .imgHover:hover .innerText
