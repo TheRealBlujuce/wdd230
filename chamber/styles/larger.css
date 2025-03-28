@@ -2,7 +2,7 @@
 
 @media (min-width: 1025px) {
     body {
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .container {
@@ -20,5 +20,14 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+    }
+
+    header{
+        margin-top: 2rem;
+        margin-bottom: 16rem;
+    }
+
+    .top{
+        width: 100%;
     }
 }

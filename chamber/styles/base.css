@@ -52,8 +52,13 @@
     height: 10rem;
     position: absolute;
     top: 8px;
-    width: 98%;
+    width: 94.5%;
     padding: 12px;
+}
+
+header{
+    margin-top: 2rem;
+    margin-bottom: 14rem;
 }
 
 /* #region Nav Bar*/
@@ -83,7 +88,7 @@
         padding: 22px;
         margin-left: 3px;
         margin-right: 3px;
-        width: 150px;
+        width: auto;
         height: auto;
         text-decoration: none;
         font-size: 0.9rem;
@@ -191,7 +196,6 @@
 	background-color: var(--nav-background-color);
 	text-align: justify;
     align-content: center;
-	box-shadow: 0 0 64px #333;
 	margin: 28px auto;
     margin-top: 14%;
     padding: 25px;
@@ -263,7 +267,6 @@ body{
     max-width: 800px;
     font-size: 1.1rem;
     background-color: var(--primary-color);
-	box-shadow: 0 0 64px #333;
     border-radius: 12px;
 }
 
@@ -437,7 +440,6 @@ footer div {
 
 .dark-mode .topnav {
     background-color: var(--dark-nav-background-color);
-    box-shadow: 0 0 64px #000;
 }
 
 .dark-mode .topnav a {
@@ -451,7 +453,6 @@ footer div {
 
 .dark-mode .banner {
     background-color: var(--dark-nav-background-color);
-    box-shadow: 0 0 64px #000;
     color: #ddd;
 }
 
@@ -475,7 +476,6 @@ footer div {
 
 .dark-mode .news, .dark-mode .events, .dark-mode .comp1, .dark-mode .comp2, .dark-mode .weather, .dark-mode .hero {
     background-color: var(--dark-primary-color);
-    box-shadow: 0 0 64px #000;
     color: #ddd;
 }
 
@@ -566,7 +566,6 @@ footer div {
         display: block;
         padding: 64px; 
         border-radius: 12px;
-        margin-top: -100px;
     }
     .topnav a.icon{ 
         right: 4%; 
@@ -631,7 +630,6 @@ footer div {
         font-size: 1.1rem;
         background-color: var(--primary-color);
         align-content: center;
-        box-shadow: 0 0 64px #333;
         border-radius: 12px;
     }
 
@@ -729,7 +727,6 @@ footer div {
         display: block;
         padding: 64px; 
         border-radius: 12px;
-        margin-top: -110px;
     }
     .topnav a.icon{ 
         right: 4%; 
@@ -787,7 +784,6 @@ footer div {
         font-size: 1.1rem;
         background-color: var(--primary-color);
         align-content: center;
-        box-shadow: 0 0 64px #333;
         border-radius: 12px;
     }
 
@@ -875,7 +871,7 @@ footer div {
     .topnav{
         padding: 64px; 
         border-radius: 12px;
-        margin-top: -80px;
+
     }
     .topnav a.icon{ 
         right: 8%; 
@@ -953,7 +949,6 @@ footer div {
         font-size: 1.1rem;
         background-color: var(--primary-color);
         align-content: center;
-        box-shadow: 0 0 64px #333;
         border-radius: 12px;
         
     }

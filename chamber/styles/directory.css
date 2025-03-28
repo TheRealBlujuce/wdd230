@@ -9,7 +9,6 @@ div.cards
 
 section {
     background-color: var(--primary-color);
-    box-shadow: 0px 1px 32px #333;
     border-radius: 32px;
 
     width: 340px;
@@ -47,7 +46,6 @@ section {
 
 .dark-mode section {
     background-color: var(--dark-primary-color);
-    box-shadow: 0px 1px 32px #333;
     border-radius: 32px;
 
     width: 340px;
