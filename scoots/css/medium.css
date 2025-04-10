@@ -10,4 +10,23 @@
     h1 {
         font-size: 2rem;
     }
+
+    .contact-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 1rem;
+        justify-content: space-between;
+      }
+      
+      .map-container {
+        flex: 1 1 45%;
+        min-width: 300px;
+      }
+      
+      .contact-form-section {
+        flex: 1 1 45%;
+        min-width: 300px;
+      }
+      
 }

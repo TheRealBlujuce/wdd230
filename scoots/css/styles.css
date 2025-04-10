@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -26,12 +27,28 @@ header {
     font-weight: bold;
 }
 
-/* Navigation */
-/* Navigation - ALWAYS HORIZONTAL */
-nav {
-    display: inline-block;
-    align-items: center;
-    gap: 1.5rem;
+/* Navigation - Horizontal */
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 101;
+}
+
+.nav-links .links {
+    display: flex;
+    gap: 2rem;
 }
 
 nav a {
@@ -39,29 +56,78 @@ nav a {
     text-decoration: none;
     padding: 0.75rem 1.25rem;
     border-radius: 8px;
-    transition: 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
     font-weight: bold;
-    white-space: nowrap; /* Prevents wrapping */
+    white-space: nowrap;
+}
+
+header h1 {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+    
 }
 
 nav a:hover {
+     transition-duration: 0.15s;
     background: rgba(255, 255, 255, 0.3);
 }
 
+
+header h1 {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* Dismissible Banner */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffd6a7;
+    color: #2d3436;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #2d3436;
+    transition: color 0.2s ease-in-out;
+}
+
+.close-banner:hover {
+    color: #d63031;
+}
+
+/* Call-to-Action Button */
 .cta-button {
     color: white;
     background-color: #1c6dbd;
     text-decoration: none;
     padding: 1.25rem;
     border-radius: 8px;
-    transition: 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
     font-weight: bold;
-    white-space: nowrap; /* Prevents wrapping */
+    white-space: nowrap;
 }
 
 .cta-button:hover {
-    color: white;
-    background-color: #5fb0e6
+    background-color: #5fb0e6;
 }
 
 /* Main Content */
@@ -70,19 +136,41 @@ main {
     padding: 2rem;
     width: 100%;
     margin: auto;
-    background: rgb(255, 253, 251);
+    background: #fffdfb;
 }
 
-.hook{
-
+.rental-summary{
     margin-bottom: 2rem;
 }
 
-.hero{
+.hero-image{
+    background: url("../images/Cozumel-Beach-Resort-Aerial-NBS.jpg") center center/cover no-repeat;
+    height: 932px;
+    width: 100%;
+    position: relative;
+    opacity: 90%;
+    border-radius: 16px;
+}
 
+/* Optional: overlay if needed */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(179, 114, 61, 0.5); /* dark overlay for contrast */
+    backdrop-filter: blur(2px); /* Apply blur to the area behind the element */
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.hero {
     padding: 6rem;
     margin-bottom: 4rem;
+}
 
+.hero h1, .hero h2, .hero p, .hero ul, .hero li{
+    color: white;
 }
 
 /* Headings */
@@ -98,6 +186,35 @@ h2 {
     margin-top: 2rem;
 }
 
+/* Weather Info Block */
+#weather-info {
+    background: linear-gradient(to bottom right, rgba(255, 248, 240, 0.1), rgba(224, 247, 255, 0.1)); /* Adjusted for opacity */
+    border-left: 6px solid #0073e6;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    max-width: 450px;
+    margin-top: 1rem;
+    color: #004080;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px); /* Apply blur to the area behind the element */
+}
+
+
+#weather-info p {
+    margin-bottom: 0.75rem;
+}
+
+#weather-info img {
+    display: block;
+    margin-top: 0.5rem;
+    width: 64px;
+    height: 64px;
+}
+
+.weather-info p{
+    color: #ffffff;
+}
+
 /* Footer */
 footer {
     background: linear-gradient(to right, #005bb5, #003d80);
@@ -107,3 +224,200 @@ footer {
     margin-top: auto;
     font-size: 1rem;
 }
+
+footer a{
+  color: white;
+}
+
+/* rentals page css */
+.rental-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.rental-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.rental-card img {
+    max-width: 75%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+#rental-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#rental-table th,
+#rental-table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+#rental-table thead {
+    background: #0073e6;
+    color: white;
+}
+
+/* Reservations page */
+
+.reservation-form {
+    margin-top: 2rem;
+    background: #f9f9f9cc;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  .form-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .form-grid label {
+    grid-column: span 1;
+    font-weight: bold;
+  }
+  
+  .form-grid input,
+  .form-grid select,
+  .form-grid textarea {
+    grid-column: span 1;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .form-grid textarea {
+    grid-column: span 2;
+    resize: vertical;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .form-actions button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #0073e6;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .form-actions button:hover {
+    background: #005bb5;
+  }
+  
+  .agreement {
+    background: #eef6ff;
+    padding: 1rem 1.5rem;
+    border-left: 6px solid #0073e6;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+  
+  /* contact page */
+
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .map-container {
+    margin: 1rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005bb5;
+  }
+  
+
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    /* Hide the navigation links on mobile */
+    .nav-links {
+      display: none;
+      background-color: #0073e6;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100vh;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
+
+    .nav-links .links{
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 1rem;
+    }
+  
+    /* Show the hamburger menu */
+    .hamburger-menu {
+      display: flex;
+      z-index: 101;
+    }
+  
+    /* Show the nav links when the hamburger menu is active */
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

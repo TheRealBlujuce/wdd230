@@ -1,0 +1,31 @@
+[
+    {
+      "type": "Honda Metro Scooter",
+      "image": "images/metro_scooter.jpg",
+      "maxPersons": 1,
+      "halfDay": 20,
+      "fullDay": 30
+    },
+    {
+      "type": "Honda Dio Scooter",
+      "image": "images/dio_scooter.webp",
+      "maxPersons": 2,
+      "halfDay": 25,
+      "fullDay": 35
+    },
+    {
+      "type": "ATV",
+      "image": "images/atv.webp",
+      "maxPersons": 2,
+      "halfDay": 40,
+      "fullDay": 60
+    },
+    {
+      "type": "4-Door Jeep Wrangler",
+      "image": "images/wrangler.webp",
+      "maxPersons": 5,
+      "halfDay": 70,
+      "fullDay": 100
+    }
+  ]
+  
