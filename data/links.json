@@ -54,6 +54,12 @@
         "links": [
           { "url": "lesson10/weather-api.html", "title": "Weather" }
         ]
+      },
+      {
+        "lesson": "Final",
+        "links": [
+          { "url": "scoots/index.html", "title": "Scoots" }
+        ]
       }
     ]
   }
